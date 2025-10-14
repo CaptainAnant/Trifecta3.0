@@ -80,7 +80,7 @@ body {
     /* This makes ONLY the main content scrollable */
     height: 100vh;
     padding: 2.5rem;
-    padding-top: calc(2.5rem + 70px);
+    padding-top: 8rem;
     /* Padding to clear the fixed navbar */
     margin-left: 280px;
     /* Space for the fixed sidebar */
@@ -246,6 +246,7 @@ body {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 3rem;
+    margin-bottom: 1rem;
     /* Add space above the footer */
     border-radius: 12px;
 }
@@ -306,7 +307,7 @@ body {
     /* Highest z-index */
     background-color: var(--dark-text);
     padding: 1rem;
-    padding-top: calc(70px + 1rem);
+    padding-top:1rem;
     /* RESPONSIVE FIX: Hide sidebar off-screen by default */
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
@@ -321,7 +322,7 @@ body {
     width: 100%;
     overflow-y: auto;
     padding: 2.5rem;
-    padding-top: calc(70px + 2.5rem);
+    padding-top: 5rem;
     /* RESPONSIVE FIX: No left margin on mobile */
     margin-left: 0;
 }

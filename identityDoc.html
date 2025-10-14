@@ -21,14 +21,14 @@
     <header id="main-header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid px-4">
-                <a class="navbar-brand" href="./index.html">Do it YourSelf</a>
+                <a class="navbar-brand" href="index.html">Do it YourSelf</a>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#">DashBoard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">DashBoard</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Explore</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./identityDoc.html"><i
+                            <li><a class="dropdown-item" href="identityDoc.html"><i
                                         class="bi bi-person-vcard-fill"></i> Identity Documents</a></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-bank"></i> Finance & Banking</a></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-lightbulb-fill"></i> Utilities</a>
@@ -60,7 +60,7 @@
         <aside class="sidebar">
             <nav>
                 <ul class="sidebar-nav">
-                    <li class="nav-item"><a href="./identityDoc.html" class="nav-link active"><i
+                    <li class="nav-item"><a href="identityDoc.html" class="nav-link active"><i
                                 class="bi bi-person-vcard-fill"></i><span>Identity Documents</span></a></li>
                     <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-bank"></i><span>Finance &
                                 Banking</span></a></li>
@@ -97,18 +97,751 @@
                                 alt="Aadhaar Logo" class="service-logo">
                             <span class="service-name">Aadhaar Card</span>
                         </a>
-                        <p class="service-intro">The 12-digit unique ID for Indian residents.</p>
+                        <p class="service-intro">A 12-digit unique ID for Indian residents, proof of identity and
+                            address.</p>
                         <i class="bi bi-chevron-down service-toggle-icon"></i>
                         <a href="https://uidai.gov.in/" target="_blank" class="service-link-arrow js-stop-propagation">
-                            <i class="bi bi-arrow-up-right"></i></a>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
                     </div>
                     <div class="collapse" id="service-aadhaar" data-bs-parent="#servicesAccordion">
-                        <div class="service-card-body">Detailed guide on how to apply for an Aadhaar card, update
-                            details, required documents, and links to the official UIDAI portal will be provided here.
+                        <div class="service-card-body">
+                            <h6>What & Why</h6>
+                            <p>Issued by UIDAI, it's a voluntary ID for every resident of India.</p>
+                            <p>Used for: Identity/Address proof, opening bank accounts, filing ITR, getting a new SIM,
+                                and availing government welfare schemes.</p>
+
+                            <h6>Eligibility</h6>
+                            <p>Any individual, regardless of age and gender, who is a resident of India. NRIs are not
+                                eligible.</p>
+
+                            <h6>Documents for New Enrollment</h6>
+                            <p><strong>Proof of Identity (PoI):</strong> PAN Card, Passport, Driving
+                                License.<br>
+                                <strong>Proof of Address (PoA):</strong> Voter ID, Bank Statement, Electricity/Water
+                                Bill (last 3 months). <br>
+                                <strong>Proof of Date of Birth (DoB):</strong> Birth Certificate, SSLC
+                                Certificate.
+                            </p>
+
+                            <h6>How to Get a New Aadhaar Card</h6>
+                            <p><strong>1. Visit Centre:</strong> Locate and visit a nearby Aadhaar Enrolment Centre.
+                                <br>
+                                <strong>2. Form & Docs:</strong> Fill the enrolment form & submit original copies of PoI
+                                & PoA. <br>
+                                <strong>3. Biometrics:</strong> Provide fingerprints, iris scan, and a photograph. <br>
+                                <strong>4. Track:</strong> Use the Enrolment ID (EID) on the acknowledgement slip to
+                                track status online via the UIDAI portal.
+                            </p>
+
+                            <h6>Updatable Information</h6>
+                            <p>You can update demographic data (Name, Address, DoB, Gender, Mobile Number, Email) and
+                                biometric data (Fingerprints, Iris, Photograph) at an enrolment centre.</p>
                         </div>
                     </div>
                 </div>
 
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-pan">
+                        <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Emblem_of_India.svg/240px-Emblem_of_India.svg.png"
+                                alt="Emblem of India" class="service-logo">
+                            <span class="service-name">PAN Card</span>
+                        </a>
+                        <p class="service-intro">A 10-character alphanumeric ID, essential for all financial
+                            transactions and tax purposes in India.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-pan" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What & Why</h6>
+                            <p>The Permanent Account Number (PAN) is a unique 10-digit code issued by the Income Tax
+                                Department. It is mandatory for filing tax returns, high-value transactions, opening
+                                bank/demat accounts, and serves as a valid proof of identity.</p>
+
+                            <h6>Eligibility</h6>
+                            <p>All Indian citizens, including minors, are eligible. Foreign citizens and entities (like
+                                companies) that conduct financial transactions in India can also apply.</p>
+
+                            <h6>Documents for Application (Indian Citizen)</h6>
+                            <p><strong>Identity Proof:</strong> Aadhaar Card, Voter ID Card, Driving License.<br>
+                                <strong>Address Proof:</strong> Aadhaar Card, recent Utility Bill, Bank Statement.<br>
+                                <strong>Date of Birth Proof:</strong> Birth Certificate, Matriculation Certificate,
+                                Aadhaar Card.
+                            </p>
+
+                            <h6>How to Apply for a New PAN Online</h6>
+                            <p><strong>1. Visit Portal:</strong> Go to the official portals of Protean (formerly NSDL
+                                e-Gov) or UTIITSL.<br>
+                                <strong>2. Fill Form 49A:</strong> Select "New PAN" and fill out Form 49A with accurate
+                                details.<br>
+                                <strong>3. Upload & Pay:</strong> Upload scanned copies of your photo, signature, and
+                                required documents. Pay the processing fee online (approx. ₹107).<br>
+                                <strong>4. Await Delivery:</strong> After successful verification, the e-PAN is
+                                delivered to your email ID in a few hours/days, and the physical card is mailed to your
+                                address.
+                            </p>
+
+                            <h6>Correction or Reprint</h6>
+                            <p>To make changes to your existing PAN or request a reprint, use the 'Changes or Correction
+                                in existing PAN Data' form on the same portals.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-voterid">
+                        <a href="https://voters.eci.gov.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Emblem_of_the_Election_Commission_of_India.svg/320px-Emblem_of_the_Election_Commission_of_India.svg.png"
+                                alt="Election Commission of India Logo" class="service-logo">
+                            <span class="service-name">Voter ID Card</span>
+                        </a>
+                        <p class="service-intro">An identity document issued by the ECI, enabling citizens to cast their
+                            vote in elections.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://voters.eci.gov.in/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-voterid" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What & Why</h6>
+                            <p>The Indian Voter ID Card or EPIC (Electors Photo Identity Card) is issued by the Election
+                                Commission of India (ECI). It confirms a citizen's eligibility to vote and also serves
+                                as a general proof of identity and address.</p>
+
+                            <h6>Eligibility</h6>
+                            <p>You must be an Indian citizen, at least 18 years old on the qualifying date, and an
+                                ordinary resident of the polling area where you wish to enroll.</p>
+
+                            <h6>Documents for New Registration</h6>
+                            <p><strong>Proof of Identity:</strong> Aadhaar Card, PAN Card, Driving License,
+                                Passport.<br>
+                                <strong>Proof of Address:</strong> Aadhaar Card, Rental Agreement, latest Utility
+                                Bill.<br>
+                                <strong>Photograph:</strong> One recent passport-sized color photograph.
+                            </p>
+
+                            <h6>How to Apply for a New Voter ID Online</h6>
+                            <p><strong>1. Visit Portal:</strong> Go to the official Voters' Service Portal
+                                (voters.eci.gov.in).<br>
+                                <strong>2. Register & Login:</strong> Create an account and log in with your
+                                credentials.<br>
+                                <strong>3. Fill Form 6:</strong> Select and fill out 'Form 6' for new registration.<br>
+                                <strong>4. Upload & Submit:</strong> Upload scanned copies of your photo and documents.
+                                Submit the form to get a reference ID for tracking.<br>
+                                <strong>5. Verification:</strong> A Booth Level Officer (BLO) may visit your address for
+                                verification before the ID is approved and issued.
+                            </p>
+
+                            <h6>Other Services</h6>
+                            <p>The portal can also be used to check your name in the electoral roll, apply for
+                                corrections (Form 8), track application status, and download the digital Voter ID
+                                (e-EPIC).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-passport">
+                        <a href="https://www.passportindia.gov.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Emblem_of_India.svg/240px-Emblem_of_India.svg.png"
+                                alt="Emblem of India" class="service-logo">
+                            <span class="service-name">Indian Passport</span>
+                        </a>
+                        <p class="service-intro">The official government document for international travel and a
+                            powerful proof of identity and nationality.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.passportindia.gov.in/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-passport" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What & Why</h6>
+                            <p>An Indian Passport is issued by the Ministry of External Affairs, allowing citizens to
+                                travel internationally. It is a globally accepted document serving as the ultimate proof
+                                of Indian citizenship, identity, and address.</p>
+
+                            <h6>Eligibility & Types</h6>
+                            <p>All citizens of India are eligible. <br>
+                                <strong>Types:</strong> Ordinary (Blue), Official (White), and Diplomatic (Maroon).
+                            </p>
+
+                            <h6>Documents for New Application (Adult)</h6>
+                            <p><strong>Proof of Date of Birth (DoB):</strong> Birth Certificate, Aadhaar Card, PAN
+                                Card.<br>
+                                <strong>Proof of Address:</strong> Aadhaar Card, Voter ID Card, latest Utility Bill,
+                                Bank Passbook.<br>
+                                <strong>Non-ECR Proof (if applicable):</strong> Class 10 certificate or higher
+                                educational documents.
+                            </p>
+
+                            <h6>How to Apply for a New Passport Online</h6>
+                            <p><strong>1. Register Online:</strong> Create an account on the Passport Seva portal.<br>
+                                <strong>2. Fill Application:</strong> Log in and fill out the fresh passport application
+                                form.<br>
+                                <strong>3. Pay & Schedule:</strong> Pay the fee and book an appointment slot at a nearby
+                                Passport Seva Kendra (PSK).<br>
+                                <strong>4. Visit PSK:</strong> Attend the appointment with all original documents for
+                                verification, biometrics, and photograph.<br>
+                                <strong>5. Delivery:</strong> After successful police verification, the passport is
+                                printed and sent to your address via Speed Post.
+                            </p>
+
+                            <h6>Tatkaal Scheme</h6>
+                            <p>For urgent requirements, the Tatkaal scheme offers faster processing for an additional
+                                fee, subject to specific conditions and documentation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-visa">
+                        <a href="https://boi.gov.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <i class="bi bi-globe-americas service-icon"></i>
+                            <span class="service-name">Visa</span>
+                        </a>
+                        <p class="service-intro">Official permission granted by a country to enter, stay, or work for a
+                            specific period.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://boi.gov.in/" target="_blank" class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-visa" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What & Why</h6>
+                            <p>A visa is a conditional authorization granted by a country to a foreigner, allowing them
+                                to enter, remain within, or leave that country. It is typically a stamp or sticker
+                                affixed to the applicant's passport.</p>
+
+                            <h6>Common Visa Types</h6>
+                            <p><strong>Tourist:</strong> For leisure, travel, or visiting friends/family.<br>
+                                <strong>Student:</strong> For pursuing education in a foreign institution.<br>
+                                <strong>Work/Employment:</strong> For taking up a job in another country.<br>
+                                <strong>Business:</strong> For commercial activities, meetings, or negotiations.<br>
+                                <strong>Transit:</strong> For passing through a country to a third destination.
+                            </p>
+
+                            <h6>General Required Documents</h6>
+                            <p>This varies by country, but common requirements include: A valid passport (min. 6 months
+                                validity), completed application form, passport-sized photos, proof of financial means,
+                                travel itinerary (flight/hotel bookings), and a cover letter stating the purpose of
+                                travel.</p>
+
+                            <h6>General Application Process</h6>
+                            <p><strong>1. Check Embassy Website:</strong> Visit the official embassy/consulate website
+                                of your destination country for the latest requirements.<br>
+                                <strong>2. Fill Application & Gather Docs:</strong> Complete the visa application form
+                                and collect all necessary documents.<br>
+                                <strong>3. Book Appointment:</strong> Pay the fee and schedule an appointment at a Visa
+                                Application Centre (e.g., VFS Global).<br>
+                                <strong>4. Attend Appointment:</strong> Submit your documents and provide biometrics
+                                (fingerprints/photo).<br>
+                                <strong>5. Track:</strong> Use the provided tracking number to monitor your
+                                application's status online.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-dl">
+                        <a href="https://sarathi.parivahan.gov.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <i class="bi bi-car-front-fill service-icon"></i>
+                            <span class="service-name">Driving License (DL)</span>
+                        </a>
+                        <p class="service-intro">An official document permitting you to operate a motor vehicle on
+                            public roads in India.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://sarathi.parivahan.gov.in/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-dl" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What & Why</h6>
+                            <p>A Driving License, issued by the Regional Transport Office (RTO), is mandatory for
+                                driving a motor vehicle in India. It also serves as a common proof of identity and
+                                address across the country.</p>
+
+                            <h6>Types & Eligibility</h6>
+                            <p><strong>Learner's License (LL):</strong> The first step, required for learning to
+                                drive.<br>
+                                <strong>Permanent License (DL):</strong> Full license issued after passing the driving
+                                test.<br>
+                                <strong>Eligibility Age:</strong> 16+ for gearless two-wheelers; 18+ for geared
+                                two-wheelers (MCWG) and cars (LMV).
+                            </p>
+
+                            <h6>Documents for Learner's License</h6>
+                            <p>Common documents include: Proof of age (Birth/School Certificate), Proof of address
+                                (Aadhaar/Voter ID), application Form 1, Medical Certificate (Form 1A), and
+                                passport-sized photos.</p>
+
+                            <h6>How to Apply for a License Online</h6>
+                            <p><strong>1. Visit Parivahan Portal:</strong> Go to the official Sarathi Parivahan
+                                website.<br>
+                                <strong>2. Apply for LL:</strong> Fill the Learner's License application, upload
+                                documents, and pay the fee.<br>
+                                <strong>3. Pass LL Test:</strong> Book a slot and clear the online test on traffic rules
+                                and signs.<br>
+                                <strong>4. Apply for DL:</strong> After 30 days (and within 6 months) of getting your
+                                LL, apply online for the permanent DL.<br>
+                                <strong>5. Pass Driving Test:</strong> Book a slot and visit the RTO to pass the
+                                practical driving test.<br>
+                                <strong>6. Receive DL:</strong> The permanent Driving License is dispatched to your
+                                registered address after you pass the test.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-birthcert">
+                        <a href="https://crsorgi.gov.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <i class="bi bi-file-earmark-text-fill service-icon"></i>
+                            <span class="service-name">Birth Certificate</span>
+                        </a>
+                        <p class="service-intro">The first official identity document of an individual, recording the
+                            event of their birth.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://crsorgi.gov.in/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-birthcert" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What & Why</h6>
+                            <p>A Birth Certificate is a vital record that documents the birth of a child. It is
+                                essential for school admissions, obtaining other documents like passports and voter IDs,
+                                and for legal proof of age and identity.</p>
+
+                            <h6>Registration Timeline & Location</h6>
+                            <p><strong>Timeline:</strong> It is mandatory to register every birth with the concerned
+                                local authorities within 21 days.<br>
+                                <strong>Location:</strong> In hospitals (by the institution), Municipal Corporation
+                                offices (urban areas), or Gram Panchayat offices (rural areas).
+                            </p>
+
+                            <h6>How to Register (Within 21 Days)</h6>
+                            <p>The head of the household must inform the local registrar by filling out the prescribed
+                                form (Form-1). The hospital where the birth occurred usually provides proof. This
+                                process is free of charge and the certificate is issued after basic verification.</p>
+
+                            <h6>Delayed Registration</h6>
+                            <p><strong>After 21 days to 30 days:</strong> Registration is allowed with a prescribed late
+                                fee.<br>
+                                <strong>After 30 days to 1 year:</strong> Requires written permission of the Registrar
+                                and a late fee.<br>
+                                <strong>After 1 year:</strong> Can only be registered with an order from a First Class
+                                Magistrate and a late fee.
+                            </p>
+
+                            <h6>Online Services</h6>
+                            <p>Many states, through the central Civil Registration System (CRS) portal, allow for online
+                                registration of births (if reported within 21 days) and searching for old records.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-deathcert">
+                        <a href="https://crsorgi.gov.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <i class="bi bi-file-earmark-text-fill service-icon"></i>
+                            <span class="service-name">Death Certificate</span>
+                        </a>
+                        <p class="service-intro">An official document certifying the death of a person, issued by the
+                            local authorities.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://crsorgi.gov.in/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-deathcert" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What & Why</h6>
+                            <p>A Death Certificate is a legal document recording the cause, date, and place of a
+                                person's death. It is crucial for settling property inheritance, claiming insurance
+                                benefits, and relieving the deceased from social and legal obligations.</p>
+
+                            <h6>Registration Timeline</h6>
+                            <p>It is legally mandatory to register every death with the local registrar within 21 days
+                                of its occurrence. The process is managed by the Civil Registration System (CRS).</p>
+
+                            <h6>Who Can Register</h6>
+                            <p>The head of the household is responsible for reporting the death. If the death occurs in
+                                a hospital or institution, the designated authority from that institution is responsible
+                                for reporting it to the registrar.</p>
+
+                            <h6>Required Information</h6>
+                            <p>Key details needed are the deceased's age, gender, date and time of death, cause of death
+                                (medical certificate), and identity/address proof of the deceased and the applicant.</p>
+
+                            <h6>Delayed Registration</h6>
+                            <p><strong>After 21 days to 30 days:</strong> Registration is allowed with a prescribed late
+                                fee.<br>
+                                <strong>After 30 days to 1 year:</strong> Requires written permission of the concerned
+                                Registrar.<br>
+                                <strong>After 1 year:</strong> Can only be registered based on an order from a First
+                                Class Magistrate.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-marriagecert">
+                        <a href="https://services.india.gov.in/service/detail/marriage-registration-1" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <i class="bi bi-gem service-icon"></i>
+                            <span class="service-name">Marriage Certificate</span>
+                        </a>
+                        <p class="service-intro">The official legal document that establishes the marital status of a
+                            couple.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://services.india.gov.in/service/detail/marriage-registration-1" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-marriagecert" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What & Why</h6>
+                            <p>A Marriage Certificate is a legal proof of marriage. It is essential for changing maiden
+                                names, applying for spouse visas, joint bank accounts, and claiming life insurance or
+                                inheritance.</p>
+
+                            <h6>Governing Laws in India</h6>
+                            <p><strong>Hindu Marriage Act, 1955:</strong> For Hindus, Buddhists, Jains, or Sikhs where
+                                the marriage is already solemnized.<br>
+                                <strong>Special Marriage Act, 1954:</strong> For all citizens irrespective of religion,
+                                especially for inter-faith marriages.
+                            </p>
+
+                            <h6>General Documents Required</h6>
+                            <p>Application form, Address & DoB proof for both partners (Aadhaar, Birth Certificate),
+                                passport-sized photos, wedding invitation card, affidavits, and ID proof for 2-3
+                                witnesses.</p>
+
+                            <h6>Application Process</h6>
+                            <p><strong>Under Hindu Act:</strong> Apply at the Sub-Registrar's office in the jurisdiction
+                                where the marriage was performed. The certificate is typically issued after verification
+                                of documents.<br>
+                                <strong>Under Special Act:</strong> Give a 30-day notice of intended marriage to the
+                                Marriage Officer. If no objections are received, the marriage is solemnized and the
+                                certificate is issued.
+                            </p>
+
+                            <h6>Online Services</h6>
+                            <p>Many state governments now provide online facilities to fill the initial application and
+                                book an appointment at the Registrar's office, streamlining the process.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-castecert">
+                        <a href="https://services.india.gov.in/service/search?kw=caste+certificate" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <i class="bi bi-file-earmark-text-fill service-icon"></i>
+                            <span class="service-name">Caste Certificate</span>
+                        </a>
+                        <p class="service-intro">An official statement certifying that a person belongs to a particular
+                            caste, tribe or community.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://services.india.gov.in/service/search?kw=caste+certificate" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-castecert" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What & Why</h6>
+                            <p>A Caste Certificate is proof of an individual's belonging to a reserved category like
+                                Scheduled Caste (SC), Scheduled Tribe (ST), or Other Backward Class (OBC). It is
+                                essential for availing benefits like reservation in government jobs, admission to
+                                educational institutions, and various welfare schemes.</p>
+
+                            <h6>Issuing Authority</h6>
+                            <p>This certificate is issued by the respective state governments through authorities like
+                                the Tehsildar, Sub-Divisional Magistrate (SDM), or District Collector's office.</p>
+
+                            <h6>General Documents Required</h6>
+                            <p>An application form, proof of identity & address (Aadhaar, Voter ID), an affidavit, and
+                                most importantly, proof of caste of a blood relative (like father or uncle), or other
+                                supporting documents as per state rules. An income certificate is often required for OBC
+                                candidates.</p>
+
+                            <h6>How to Apply</h6>
+                            <p>The process varies by state.<br>
+                                <strong>1. Online:</strong> Many states have their own e-District or service portals
+                                where you can apply, upload documents, and track status online.<br>
+                                <strong>2. Offline:</strong> You can apply by submitting the filled application form and
+                                required documents at the local Tehsildar's office or a Common Service Centre (CSC).
+                            </p>
+
+                            <h6>Verification</h6>
+                            <p>After submission, a verification process is typically conducted by local revenue
+                                officials, which may include a field inquiry, before the certificate is approved and
+                                issued.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-educerts">
+                        <a href="https://www.digilocker.gov.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <i class="bi bi-mortarboard-fill service-icon"></i>
+                            <span class="service-name">Educational Certificates</span>
+                        </a>
+                        <p class="service-intro">Official documents like marksheets and degrees certifying academic
+                            qualifications.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.digilocker.gov.in/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-educerts" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What & Why</h6>
+                            <p>These are documents (marksheets, pass certificates, degrees) issued by an educational
+                                institution. They are crucial proof of your academic qualifications, required for higher
+                                education admissions, employment, and visa applications.</p>
+
+                            <h6>Key Certificates in India</h6>
+                            <p><strong>School Level:</strong> Class 10th & 12th Marksheets and Pass Certificates.<br>
+                                <strong>Higher Education:</strong> Bachelor's Degree, Master's Degree, Diploma
+                                Certificates, and yearly/semester marksheets.
+                            </p>
+
+                            <h6>Issuing Authorities</h6>
+                            <p>Certificates are issued by recognized School Boards (like CBSE, CISCE, State Boards) and
+                                Universities (as per UGC guidelines) across India.</p>
+
+                            <h6>How to Access Digitally via DigiLocker</h6>
+                            <p>DigiLocker is a Government of India initiative to access authentic digital documents.<br>
+                                <strong>1. Sign Up:</strong> Create a DigiLocker account using your Aadhaar number.<br>
+                                <strong>2. Browse Partners:</strong> Go to the Education category and select your board
+                                or university.<br>
+                                <strong>3. Fetch Documents:</strong> Enter your details (Roll No., Year, etc.) to fetch
+                                your digital certificate directly from the source.<br>
+                                <strong>4. Use Digitally:</strong> These digital certificates are legally valid and on
+                                par with physical originals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-rationcard">
+                        <a href="https://nfsa.gov.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <i class="bi bi-basket-fill service-icon"></i>
+                            <span class="service-name">Ration Card</span>
+                        </a>
+                        <p class="service-intro">A government document enabling households to buy subsidized food grains
+                            from the Public Distribution System.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://nfsa.gov.in/" target="_blank" class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-rationcard" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What & Why</h6>
+                            <p>Issued by state governments, a Ration Card allows eligible households to purchase
+                                essential food items like wheat, rice, and sugar at subsidized rates from Fair Price
+                                Shops (FPS) under the National Food Security Act (NFSA). It also acts as a common proof
+                                of address and identity.</p>
+
+                            <h6>Types of Ration Cards</h6>
+                            <p>Based on a household's economic status, cards are generally categorized as:<br>
+                                <strong>AAY (Antyodaya Anna Yojana):</strong> For the poorest families, offering the
+                                highest subsidy.<br>
+                                <strong>PHH (Priority Household):</strong> For families meeting state eligibility
+                                criteria, entitled to a fixed quantity of grains per member.<br>
+                                <strong>APL (Above Poverty Line):</strong> For households with higher incomes, who may
+                                receive items at less subsidized rates or not at all.
+                            </p>
+
+                            <h6>General Documents Required</h6>
+                            <p>Application form, Aadhaar cards of all family members, proof of address (utility bill),
+                                income certificate, and passport-sized photographs of the head of the family.</p>
+
+                            <h6>Application Process</h6>
+                            <p>Applications are managed by the Food, Civil Supplies & Consumer Affairs department of
+                                each state. The process can typically be initiated online through the state's specific
+                                food portal or offline at the local Circle/Taluk office.</p>
+
+                            <h6>One Nation One Ration Card (ONORC)</h6>
+                            <p>This scheme allows beneficiaries to access their entitled food grains from any Fair Price
+                                Shop in the country, which is especially useful for migrant workers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-pension">
+                        <a href="https://www.epfindia.gov.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <i class="bi bi-person-vcard service-icon"></i>
+                            <span class="service-name">Pension Card (PPO)</span>
+                        </a>
+                        <p class="service-intro">An identifier, primarily the PPO number, required for receiving monthly
+                            pension benefits.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.epfindia.gov.in/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-pension" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What It Is</h6>
+                            <p>In India, a "Pension Card" is most often the Pension Payment Order (PPO) number. This is
+                                a unique 12-digit number given to each pensioner under the Employees' Pension Scheme
+                                (EPS) by the EPFO, or a similar identifier for government pensioners.</p>
+
+                            <h6>Why It's Important</h6>
+                            <p>The PPO number is a crucial reference for all communication with the pension-sanctioning
+                                authority. It is required to receive the monthly pension, transfer the pension account
+                                between banks, and most importantly, for submitting the annual Life Certificate (Jeevan
+                                Pramaan).</p>
+
+                            <h6>Who Issues It</h6>
+                            <p><strong>EPFO:</strong> For employees of the private sector covered under the EPS-95
+                                scheme.<br>
+                                <strong>Central/State Governments:</strong> For retired government employees.
+                            </p>
+
+                            <h6>How to Get Your PPO</h6>
+                            <p>The PPO is generated by the concerned authority (like EPFO) after processing the pension
+                                claim upon retirement. The number is communicated to the pensioner and the bank branch
+                                where the pension is to be credited.</p>
+
+                            <h6>Jeevan Pramaan (Life Certificate)</h6>
+                            <p>Pensioners must submit a Life Certificate annually to continue receiving their pension.
+                                This can be done digitally using the PPO number at various centres or through the Jeevan
+                                Pramaan portal, proving that the pensioner is still alive.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-statecards-karnataka">
+                        <a href="https://sevasindhu.karnataka.gov.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <i class="bi bi-person-vcard-fill service-icon"></i>
+                            <span class="service-name">State-Specific Cards</span>
+                        </a>
+                        <p class="service-intro">Cards issued by the Karnataka Govt. to provide residents access to
+                            welfare schemes and benefits.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://sevasindhu.karnataka.gov.in/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-statecards-karnataka" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What & Why</h6>
+                            <p>State governments issue various cards to deliver targeted benefits like health insurance,
+                                subsidies, and financial aid to eligible residents. These supplement national IDs like
+                                Aadhaar.</p>
+
+                            <h6>Key Cards in Karnataka</h6>
+                            <p><strong>Arogya Karnataka Card (AB-ArK):</strong> A health insurance card providing
+                                cashless medical treatment at empanelled hospitals for eligible families.<br>
+                                <strong>Labour Card (Karmika Card):</strong> Provides social security and welfare
+                                benefits like pensions, scholarships, and financial aid to registered construction
+                                workers.<br>
+                                <strong>Kutumba Card:</strong> A unique Family ID for every family in the state,
+                                designed to proactively deliver government benefits without needing separate
+                                applications.
+                            </p>
+
+                            <h6>How to Apply</h6>
+                            <p>Applications for most schemes are processed through the <strong>Seva Sindhu</strong>
+                                portal, which is Karnataka's one-stop-shop for citizen services. Applicants can also
+                                visit physical centres like BangaloreOne, KarnatakaOne, or GramaOne.</p>
+
+                            <h6>General Documents Required</h6>
+                            <p>While specific documents vary by scheme, common requirements include Aadhaar Card, Ration
+                                Card, proof of residence, income certificate, and caste certificate (if applicable).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-lifeinsurance">
+                        <a href="https://www.irdai.gov.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <i class="bi bi-shield-check service-icon"></i>
+                            <span class="service-name">Life Insurance</span>
+                        </a>
+                        <p class="service-intro">A contract that provides financial protection to your family in the
+                            event of your demise.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.irdai.gov.in/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-lifeinsurance" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What & Why</h6>
+                            <p>Life insurance is a contract with an insurer who, in exchange for regular premium
+                                payments, provides a lump-sum payment (Sum Assured) to your beneficiaries upon your
+                                death. It ensures your family can manage debts, meet goals, and maintain their
+                                lifestyle.</p>
+
+                            <h6>Common Policy Types</h6>
+                            <p><strong>Term Insurance:</strong> Pure risk cover. Offers a large sum assured for a low
+                                premium for a fixed term, with no maturity benefit.<br>
+                                <strong>Endowment Plan:</strong> A combination of insurance and savings. Pays out on
+                                death or on policy maturity.<br>
+                                <strong>ULIP (Unit Linked Plan):</strong> Combines insurance with market-linked
+                                investments.<br>
+                                <strong>Money-Back Policy:</strong> Periodically pays out a portion of the sum assured
+                                during the policy term.
+                            </p>
+
+                            <h6>Key Factors to Consider</h6>
+                            <p><strong>Cover Amount (Sum Assured):</strong> Should be at least 10-15 times your annual
+                                income.<br>
+                                <strong>Policy Term:</strong> Should cover you at least until your retirement age.<br>
+                                <strong>Claim Settlement Ratio (CSR):</strong> A high CSR (above 95%) indicates the
+                                insurer's reliability in paying claims.<br>
+                                <strong>Riders:</strong> Optional add-ons like critical illness or accidental death
+                                benefits for enhanced protection.
+                            </p>
+
+                            <h6>Tax Benefits (Income Tax Act, 1961)</h6>
+                            <p>Premiums paid are typically eligible for deduction under Section 80C. The death/maturity
+                                benefit is usually tax-free under Section 10(10D), subject to conditions.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <footer id="main-footer">
                 <div class="container">

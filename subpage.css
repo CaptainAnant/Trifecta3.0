@@ -1,0 +1,252 @@
+/* --- Sub-page Layout Structure --- */
+body {
+    /* Prevent the entire page from scrolling */
+    overflow: hidden;
+}
+
+.subpage-container {
+    display: flex;
+    /* Set the container height to fill the screen below the navbar */
+    height: 100vh;
+    /* Add padding at the top to account for the fixed navbar's height */
+    padding-top: 70px; /* Adjust this value to match your navbar's height */
+}
+
+/* --- Fixed Sidebar Styling (Updated) --- */
+.sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    height: calc(100vh - 70px); /* Full height minus navbar height */
+    margin-top: 70px; /* Push below navbar */
+    padding: 2rem 1rem;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1020;
+
+    /* Background changed to solid black */
+    background-color: var(--dark-text); 
+}
+
+/* --- Sidebar Link Styles (Updated for Visibility) --- */
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Default state for links (slightly dimmed) */
+.sidebar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    margin: 0.25rem 0;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.6); /* Dimmed white for inactive links */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover state for links */
+.sidebar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white; /* Bright white on hover */
+}
+
+/* Active link style (bright and clearly visible) */
+.sidebar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white; /* Bright white for active link */
+    font-weight: 600;
+}
+
+.sidebar-nav .nav-link i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+/* --- Scrollable Main Content Styling (Updated) --- */
+.main-content {
+    flex-grow: 1;
+    overflow-y: auto; /* This makes ONLY the main content scrollable */
+    height: 100vh;
+    padding: 2.5rem;
+    padding-top: calc(2.5rem + 70px); /* Padding to clear the fixed navbar */
+    margin-left: 280px; /* Space for the fixed sidebar */
+    background-color: var(--light-bg);
+}
+
+
+.page-title {
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--dark-text);
+}
+
+/* Accordion/Service Card Styling */
+.service-item {
+    margin-bottom: 1rem;
+}
+
+.service-card {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    border-color: #ccc;
+}
+
+.service-logo {
+    height: 24px;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.service-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--dark-text);
+}
+
+.service-intro {
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+    color: #555;
+    flex-grow: 1;
+}
+
+.service-toggle-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Class added by JS to rotate the icon */
+.service-toggle-icon.rotated {
+    transform: rotate(180deg);
+}
+
+.service-card-body {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 0 0 12px 12px;
+    border: 1px solid #ddd;
+    border-top: none;
+    line-height: 1.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Basic Setup & Variables --- */
+:root {
+    --light-bg: #E4EAEA;
+    --dark-accent: #24464C;
+    --dark-text: #000000;
+    --light-text: #FFFFFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+}
+
+/* --- Reusable Components (Navbar & Footer) --- */
+
+/* Updated Navbar with Glass Effect */
+.navbar {
+    background-color: var(--dark-text); /* Changed to complete black */
+    padding: 0.75rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--light-text) !important;
+    transition: color 0.3s ease; /* Added for hover effect */
+}
+
+/* Added logo hover effect */
+.navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar .nav-link {
+    color: var(--light-bg) !important;
+    font-weight: 400;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--light-text) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28228, 234, 234, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Added Dropdown Menu Styles for Explore button */
+.dropdown-menu {
+    background-color: rgba(10, 10, 10, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+}
+
+.dropdown-item {
+    color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--light-text);
+}
+
+/* Footer (placed inside main content) */
+#main-footer {
+    background-color: var(--dark-text);
+    color: rgba(228, 234, 234, 0.7);
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 3rem; /* Add space above the footer */
+    border-radius: 12px;
+}
+
+#main-footer p {
+    margin: 0;
+}

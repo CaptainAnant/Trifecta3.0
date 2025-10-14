@@ -1,0 +1,370 @@
+/* --- Basic Setup & Variables --- */
+:root {
+    --light-bg: #E4EAEA;
+    --dark-accent: #24464C;
+    --dark-text: #000000;
+    --light-text: #FFFFFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* --- Navbar Styling --- */
+/* --- Navbar Styling --- */
+.navbar {
+    background-color: var(--dark-text); /* Changed to pure black */
+    /* Removed backdrop-filter properties */
+    padding: 0.75rem 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-weight: 700; /* Bold font for the brand name */
+    font-size: 1.5rem;
+    color: var(--light-text) !important; /* Use !important to override Bootstrap's default */
+}
+
+.nav-link {
+    color: var(--light-bg) !important; /* Light text color for links */
+    font-weight: 400;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--light-text) !important; /* Brighter white on hover */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Styling the hamburger menu icon for mobile */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    /* This uses an SVG with a white stroke to make it visible on our dark navbar */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28228, 234, 234, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* When the mobile menu is open, we make it a solid color for readability */
+.navbar-collapse.show, .navbar-collapse.collapsing {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+
+
+/* --- Hero Section Styling --- */
+#hero {
+    background: linear-gradient(135deg, var(--dark-accent), var(--dark-text));
+    color: var(--light-text);
+    min-height: 100vh; /* Changed to full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+#hero .hero-content {
+    max-width: 800px; /* Set a max-width for the text for better readability on large screens */
+}
+
+
+/* changed. scroll effect  */
+#hero h1 {
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    
+    /* --- New Properties for the Wipe Effect --- */
+
+    /* 1. The text color is made transparent */
+    color: transparent;
+
+    /* 2. A linear gradient is created as the background, half grey and half white */
+    background-image: linear-gradient(to right, white 50%, grey 50%);
+    
+    /* 3. The background size is doubled, so we can move it */
+    background-size: 200% 100%;
+
+    /* 4. The background starts positioned to the right, showing only the grey part */
+    background-position: 100% 0;
+
+    /* 5. This is the magic: the background is "clipped" to the shape of the text */
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    background-clip: text;
+
+    /* 6. A smooth transition for the background movement */
+    transition: background-position 0.1s linear;
+}
+
+#hero p {
+    font-size: clamp(1rem, 3vw, 1.25rem); /* Responsive font size for the sub-heading */
+    font-weight: 300; /* Lighter font weight for contrast */
+    color: rgba(228, 234, 234, 0.8); /* Use the light background color with some transparency */
+    max-width: 600px;
+    margin: 0 auto; /* Center the paragraph if it's not full width */
+
+    /* Add a slightly delayed fade-in animation */
+    animation: fadeInUp 1s ease-out 0.5s;
+    animation-fill-mode: backwards; /* Ensures it starts from transparent before animation begins */
+}
+
+/* --- Keyframe animations for the text --- */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+/* --- Categories Section Styling --- */
+#categories {
+    padding: 100px 0; /* Add generous padding to the top and bottom */
+    background-color: var(--light-bg); /* Use the main light background */
+}
+
+.section-title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: var(--dark-text);
+}
+
+.category-card {
+    background-color: var(--dark-accent); /* Use the dark accent color for the cards */
+    color: var(--light-text);
+    padding: 40px 30px;
+    border-radius: 15px; /* More rounded corners for a modern feel */
+    text-align: center;
+    border: 1px solid transparent;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    height: 100%; /* Make all cards in a row the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; /* Needed for the stretched link to work */
+}
+
+.category-card:hover {
+    transform: translateY(-12px) scale(1.03); /* Lift and grow effect on hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover for depth */
+}
+
+.category-card .card-icon i {
+    font-size: 3.5rem; /* Large icon size */
+    margin-bottom: 20px;
+    display: inline-block;
+    color: var(--light-bg); /* Use the light background color for the icon */
+    transition: transform 0.4s ease;
+}
+
+.category-card:hover .card-icon i {
+    transform: scale(1.1); /* Slightly grow the icon on hover */
+}
+
+.category-card .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.category-card .card-description {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: rgba(228, 234, 234, 0.8);
+    line-height: 1.6;
+}
+
+
+/* --- Footer Styling --- */
+#main-footer {
+    background-color: var(--dark-text); /* Solid black background */
+    color: rgba(228, 234, 234, 0.7); /* Muted light text */
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#main-footer p {
+    margin: 0; /* Remove default paragraph margin */
+}
+
+
+
+/* --- Styling for the Explore Dropdown Menu --- */
+.dropdown-menu {
+    /* Glassmorphism Effect */
+    background-color: rgba(10, 10, 10, 0.1); /* Semi-transparent dark background */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+}
+
+/* Style for each link in the dropdown */
+.dropdown-item {
+    color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-item i {
+    font-size: 1rem;
+    margin-right: 0.75rem;
+    opacity: 0.8;
+}
+
+/* Hover effect for the dropdown links */
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--light-text);
+}
+
+/* Override Bootstrap's default focus box-shadow */
+.dropdown-item:focus {
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Basic Setup & Variables --- */
+:root {
+    --light-bg: #E4EAEA;
+    --dark-accent: #24464C;
+    --dark-text: #000000;
+    --light-text: #FFFFFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+}
+
+/* --- Reusable Components (Navbar & Footer) --- */
+
+/* Updated Navbar with Glass Effect */
+.navbar {
+    background-color: rgba(10, 10, 10, 0.6); /* Adjusted transparency */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--light-text) !important;
+    transition: color 0.3s ease; /* Added for hover effect */
+}
+
+/* Added logo hover effect */
+.navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar .nav-link {
+    color: var(--light-bg) !important;
+    font-weight: 400;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--light-text) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28228, 234, 234, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Added Dropdown Menu Styles for Explore button */
+.dropdown-menu {
+    background-color: rgba(10, 10, 10, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+}
+
+.dropdown-item {
+    color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--light-text);
+}
+
+/* Footer (placed inside main content) */
+#main-footer {
+    background-color: var(--dark-text);
+    color: rgba(228, 234, 234, 0.7);
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 3rem; /* Add space above the footer */
+    border-radius: 12px;
+}
+
+#main-footer p {
+    margin: 0;
+}

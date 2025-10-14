@@ -215,7 +215,7 @@ body {
 
 /* Added Dropdown Menu Styles for Explore button */
 .dropdown-menu {
-    background-color: rgba(10, 10, 10, 0.1);
+    background-color: rgba(10, 10, 10, 0.6);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -255,3 +255,91 @@ body {
 .redirect-link{
     text-decoration: none;
 }
+
+
+
+
+/* --- Responsive Adjustments --- */
+/* RESPONSIVE FIX: Overlay for mobile sidebar */
+#sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1031; /* Above main content, below sidebar */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+#sidebar-overlay.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/* --- Sub-page Layout Structure --- */
+body {
+    overflow-x: hidden; /* Allow vertical scroll, hide horizontal */
+}
+.subpage-container {
+    display: flex;
+    height: 100%;
+}
+
+/* --- MOBILE FIRST STYLES (Default for screens < 992px) --- */
+.sidebar {
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1032; /* Highest z-index */
+    background-color: var(--dark-text);
+    padding: 1rem;
+    padding-top: calc(70px + 1rem);
+    /* RESPONSIVE FIX: Hide sidebar off-screen by default */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+.sidebar.is-open {
+    /* RESPONSIVE FIX: Slide sidebar into view */
+    transform: translateX(0);
+}
+
+.main-content {
+    width: 100%;
+    overflow-y: auto;
+    padding: 2.5rem;
+    padding-top: calc(70px + 2.5rem);
+    /* RESPONSIVE FIX: No left margin on mobile */
+    margin-left: 0; 
+}
+
+.sidebar-toggler {
+    display: block; /* Show sidebar toggle on mobile */
+}
+
+/* --- DESKTOP STYLES (Applied for screens > 992px) --- */
+@media (min-width: 992px) {
+    .sidebar {
+        /* RESPONSIVE FIX: Make sidebar visible and static on desktop */
+        transform: translateX(0);
+        transition: none;
+    }
+    .main-content {
+        /* RESPONSIVE FIX: Add margin back for the visible sidebar */
+        margin-left: 280px;
+    }
+    .sidebar-toggler {
+        /* RESPONSIVE FIX: Hide the mobile-only button on desktop */
+        display: none;
+    }
+    #sidebar-overlay {
+        display: none; /* No overlay needed on desktop */
+    }
+}
+
+/* ... other subpage styles like sidebar links and service cards ... */

@@ -9,15 +9,18 @@ body {
     /* Set the container height to fill the screen below the navbar */
     height: 100vh;
     /* Add padding at the top to account for the fixed navbar's height */
-    padding-top: 70px; /* Adjust this value to match your navbar's height */
+    padding-top: 70px;
+    /* Adjust this value to match your navbar's height */
 }
 
 /* --- Fixed Sidebar Styling (Updated) --- */
 .sidebar {
     width: 280px;
     flex-shrink: 0;
-    height: calc(100vh - 70px); /* Full height minus navbar height */
-    margin-top: 70px; /* Push below navbar */
+    height: calc(100vh - 70px);
+    /* Full height minus navbar height */
+    margin-top: 70px;
+    /* Push below navbar */
     padding: 2rem 1rem;
     overflow-y: auto;
     position: fixed;
@@ -26,7 +29,7 @@ body {
     z-index: 1020;
 
     /* Background changed to solid black */
-    background-color: var(--dark-text); 
+    background-color: var(--dark-text);
 }
 
 /* --- Sidebar Link Styles (Updated for Visibility) --- */
@@ -44,7 +47,8 @@ body {
     padding: 0.8rem 1rem;
     margin: 0.25rem 0;
     border-radius: 8px;
-    color: rgba(255, 255, 255, 0.6); /* Dimmed white for inactive links */
+    color: rgba(255, 255, 255, 0.6);
+    /* Dimmed white for inactive links */
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -52,13 +56,15 @@ body {
 /* Hover state for links */
 .sidebar-nav .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    color: white; /* Bright white on hover */
+    color: white;
+    /* Bright white on hover */
 }
 
 /* Active link style (bright and clearly visible) */
 .sidebar-nav .nav-link.active {
     background-color: rgba(255, 255, 255, 0.15);
-    color: white; /* Bright white for active link */
+    color: white;
+    /* Bright white for active link */
     font-weight: 600;
 }
 
@@ -70,11 +76,14 @@ body {
 /* --- Scrollable Main Content Styling (Updated) --- */
 .main-content {
     flex-grow: 1;
-    overflow-y: auto; /* This makes ONLY the main content scrollable */
+    overflow-y: auto;
+    /* This makes ONLY the main content scrollable */
     height: 100vh;
     padding: 2.5rem;
-    padding-top: calc(2.5rem + 70px); /* Padding to clear the fixed navbar */
-    margin-left: 280px; /* Space for the fixed sidebar */
+    padding-top: calc(2.5rem + 70px);
+    /* Padding to clear the fixed navbar */
+    margin-left: 280px;
+    /* Space for the fixed sidebar */
     background-color: var(--light-bg);
 }
 
@@ -98,10 +107,11 @@ body {
     border-radius: 12px;
     border: 1px solid #ddd;
     cursor: pointer;
-    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .service-card:hover {
+    transform: scale(1.015); /* Slight growth */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
     border-color: #ccc;
 }
@@ -146,18 +156,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* --- Basic Setup & Variables --- */
 :root {
     --light-bg: #E4EAEA;
@@ -176,7 +174,8 @@ body {
 
 /* Updated Navbar with Glass Effect */
 .navbar {
-    background-color: var(--dark-text); /* Changed to complete black */
+    background-color: var(--dark-text);
+    /* Changed to complete black */
     padding: 0.75rem 0;
     position: fixed;
     top: 0;
@@ -189,7 +188,8 @@ body {
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--light-text) !important;
-    transition: color 0.3s ease; /* Added for hover effect */
+    transition: color 0.3s ease;
+    /* Added for hover effect */
 }
 
 /* Added logo hover effect */
@@ -232,7 +232,8 @@ body {
     transition: background-color 0.2s ease-in-out;
 }
 
-.dropdown-item:hover, .dropdown-item:focus {
+.dropdown-item:hover,
+.dropdown-item:focus {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--light-text);
 }
@@ -244,7 +245,8 @@ body {
     padding: 1.5rem 0;
     text-align: center;
     font-size: 0.9rem;
-    margin-top: 3rem; /* Add space above the footer */
+    margin-top: 3rem;
+    /* Add space above the footer */
     border-radius: 12px;
 }
 
@@ -252,7 +254,7 @@ body {
     margin: 0;
 }
 
-.redirect-link{
+.redirect-link {
     text-decoration: none;
 }
 
@@ -268,11 +270,13 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1031; /* Above main content, below sidebar */
+    z-index: 1031;
+    /* Above main content, below sidebar */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
 #sidebar-overlay.is-visible {
     opacity: 1;
     visibility: visible;
@@ -282,8 +286,10 @@ body {
 
 /* --- Sub-page Layout Structure --- */
 body {
-    overflow-x: hidden; /* Allow vertical scroll, hide horizontal */
+    overflow-x: hidden;
+    /* Allow vertical scroll, hide horizontal */
 }
+
 .subpage-container {
     display: flex;
     height: 100%;
@@ -296,7 +302,8 @@ body {
     top: 0;
     left: 0;
     height: 100vh;
-    z-index: 1032; /* Highest z-index */
+    z-index: 1032;
+    /* Highest z-index */
     background-color: var(--dark-text);
     padding: 1rem;
     padding-top: calc(70px + 1rem);
@@ -304,6 +311,7 @@ body {
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
 }
+
 .sidebar.is-open {
     /* RESPONSIVE FIX: Slide sidebar into view */
     transform: translateX(0);
@@ -315,11 +323,12 @@ body {
     padding: 2.5rem;
     padding-top: calc(70px + 2.5rem);
     /* RESPONSIVE FIX: No left margin on mobile */
-    margin-left: 0; 
+    margin-left: 0;
 }
 
 .sidebar-toggler {
-    display: block; /* Show sidebar toggle on mobile */
+    display: block;
+    /* Show sidebar toggle on mobile */
 }
 
 /* --- DESKTOP STYLES (Applied for screens > 992px) --- */
@@ -329,17 +338,33 @@ body {
         transform: translateX(0);
         transition: none;
     }
+
     .main-content {
         /* RESPONSIVE FIX: Add margin back for the visible sidebar */
         margin-left: 280px;
     }
+
     .sidebar-toggler {
         /* RESPONSIVE FIX: Hide the mobile-only button on desktop */
         display: none;
     }
+
     #sidebar-overlay {
-        display: none; /* No overlay needed on desktop */
+        display: none;
+        /* No overlay needed on desktop */
     }
 }
 
 /* ... other subpage styles like sidebar links and service cards ... */
+
+
+.service-link-arrow {
+    color: var(--dark-text);
+    margin-left: 1.65rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.service-link-arrow:hover {
+    color: var(--dark-accent);
+}

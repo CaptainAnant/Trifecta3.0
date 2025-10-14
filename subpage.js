@@ -1,22 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Find all the accordion items on the page
+    // This part handles the rotating chevron icon
     const serviceItems = document.querySelectorAll('.service-item');
-
     serviceItems.forEach(item => {
         const collapseElement = item.querySelector('.collapse');
         const toggleIcon = item.querySelector('.service-toggle-icon');
-
         if (collapseElement && toggleIcon) {
-            // When the accordion is about to be shown...
             collapseElement.addEventListener('show.bs.collapse', () => {
                 toggleIcon.classList.add('rotated');
             });
-
-            // When the accordion is about to be hidden...
             collapseElement.addEventListener('hide.bs.collapse', () => {
                 toggleIcon.classList.remove('rotated');
             });
         }
     });
-    
+
+    // --- NEW CODE ADDED BELOW ---
+    // This part prevents links inside the card from toggling the collapse
+    const links = document.querySelectorAll('.js-stop-propagation');
+    links.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
+    });
 });

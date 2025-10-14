@@ -4,7 +4,6 @@ body {
     overflow: hidden;
 }
 
-
 .subpage-container {
     display: flex;
     /* Set the container height to fill the screen below the navbar */
@@ -117,6 +116,7 @@ body {
     font-weight: 600;
     font-size: 1.1rem;
     color: var(--dark-text);
+    text-decoration: none;
 }
 
 .service-intro {
@@ -250,4 +250,8 @@ body {
 
 #main-footer p {
     margin: 0;
+}
+
+.redirect-link{
+    text-decoration: none;
 }

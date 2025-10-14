@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,17 +20,22 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid px-4">
                 <a class="navbar-brand" href="./index.html">Do it YourSelf</a>
-                
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#">DashBoard</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Explore
-                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./identityDoc.html"><i class="bi bi-person-vcard-fill"></i> Identity Documents</a></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-bank"></i> Finance & Banking</a></li>
-                            </ul>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-lightbulb-fill"></i> Utilities</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-mortarboard-fill"></i> Education</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-robot"></i> AI Tools & Platforms</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-tools"></i> Productivity & Creativity</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-bag-heart-fill"></i> E-Commerce & Fashion</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-rocket-takeoff-fill"></i> Quick Services</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-airplane-engines-fill"></i> Travel</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-cup-hot-fill"></i> Food & Beverages</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Terms & Disclaimer</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
@@ -41,7 +45,6 @@
     </header>
 
     <div class="subpage-container">
-        
         <aside class="sidebar">
             <nav>
                 <ul class="sidebar-nav">
@@ -62,128 +65,91 @@
         <main class="main-content">
             <h1 class="page-title">Identity Documents</h1>
 
-            <div class="service-list">
+            <div class="accordion" id="servicesAccordion">
+                
                 <div class="service-item">
                     <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-aadhaar">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/320px-Aadhaar_Logo.svg.png" alt="Aadhaar Logo" class="service-logo">
-                        <span class="service-name">Aadhaar Card</span>
-                        <p class="service-intro">The 12-digit unique ID for Indian residents, proof of identity and address.</p>
+                        <a href="https://uidai.gov.in/" target="_blank" class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/320px-Aadhaar_Logo.svg.png" alt="Aadhaar Logo" class="service-logo">
+                            <span class="service-name">Aadhaar Card</span>
+                        </a>
+                        <p class="service-intro">The 12-digit unique ID for Indian residents.</p>
                         <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://uidai.gov.in/" target="_blank" class="service-link-arrow js-stop-propagation"><i class="bi bi-arrow-up-right"></i></a>
                     </div>
-                    <div class="collapse" id="service-aadhaar">
-                        <div class="service-card-body">
-                            Detailed guide on how to apply for an Aadhaar card, update details, required documents, and links to the official UIDAI portal. Step-by-step instructions will be provided here.
-                        </div>
+                    <div class="collapse" id="service-aadhaar" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">Detailed guide on how to apply for an Aadhaar card, update details, required documents, and links to the official UIDAI portal will be provided here.</div>
                     </div>
-                </div>
                 </div>
 
-                <div class="service-list">
                 <div class="service-item">
                     <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-aadhaar">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/320px-Aadhaar_Logo.svg.png" alt="Aadhaar Logo" class="service-logo">
-                        <span class="service-name">Aadhaar Card</span>
-                        <p class="service-intro">The 12-digit unique ID for Indian residents, proof of identity and address.</p>
+                        <a href="https://uidai.gov.in/" target="_blank" class="service-brand js-stop-propagation">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/320px-Aadhaar_Logo.svg.png" alt="Aadhaar Logo" class="service-logo">
+                            <span class="service-name">Aadhaar Card</span>
+                        </a>
+                        <p class="service-intro">The 12-digit unique ID for Indian residents.</p>
                         <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://uidai.gov.in/" target="_blank" class="service-link-arrow js-stop-propagation"><i class="bi bi-arrow-up-right"></i></a>
                     </div>
-                    <div class="collapse" id="service-aadhaar">
-                        <div class="service-card-body">
-                            Detailed guide on how to apply for an Aadhaar card, update details, required documents, and links to the official UIDAI portal. Step-by-step instructions will be provided here.
-                        </div>
+                    <div class="collapse" id="service-aadhaar" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">Detailed guide on how to apply for an Aadhaar card, update details, required documents, and links to the official UIDAI portal will be provided here.</div>
                     </div>
-                </div>
-                </div><div class="service-list">
-                <div class="service-item">
-                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-aadhaar">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/320px-Aadhaar_Logo.svg.png" alt="Aadhaar Logo" class="service-logo">
-                        <span class="service-name">Aadhaar Card</span>
-                        <p class="service-intro">The 12-digit unique ID for Indian residents, proof of identity and address.</p>
-                        <i class="bi bi-chevron-down service-toggle-icon"></i>
-                    </div>
-                    <div class="collapse" id="service-aadhaar">
-                        <div class="service-card-body">
-                            Detailed guide on how to apply for an Aadhaar card, update details, required documents, and links to the official UIDAI portal. Step-by-step instructions will be provided here.
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="service-list">
-                <div class="service-item">
-                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-aadhaar">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/320px-Aadhaar_Logo.svg.png" alt="Aadhaar Logo" class="service-logo">
-                        <span class="service-name">Aadhaar Card</span>
-                        <p class="service-intro">The 12-digit unique ID for Indian residents, proof of identity and address.</p>
-                        <i class="bi bi-chevron-down service-toggle-icon"></i>
-                    </div>
-                    <div class="collapse" id="service-aadhaar">
-                        <div class="service-card-body">
-                            Detailed guide on how to apply for an Aadhaar card, update details, required documents, and links to the official UIDAI portal. Step-by-step instructions will be provided here.
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="service-list">
-                <div class="service-item">
-                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-aadhaar">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/320px-Aadhaar_Logo.svg.png" alt="Aadhaar Logo" class="service-logo">
-                        <span class="service-name">Aadhaar Card</span>
-                        <p class="service-intro">The 12-digit unique ID for Indian residents, proof of identity and address.</p>
-                        <i class="bi bi-chevron-down service-toggle-icon"></i>
-                    </div>
-                    <div class="collapse" id="service-aadhaar">
-                        <div class="service-card-body">
-                            Detailed guide on how to apply for an Aadhaar card, update details, required documents, and links to the official UIDAI portal. Step-by-step instructions will be provided here.
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="service-list">
-                <div class="service-item">
-                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-aadhaar">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/320px-Aadhaar_Logo.svg.png" alt="Aadhaar Logo" class="service-logo">
-                        <span class="service-name">Aadhaar Card</span>
-                        <p class="service-intro">The 12-digit unique ID for Indian residents, proof of identity and address.</p>
-                        <i class="bi bi-chevron-down service-toggle-icon"></i>
-                    </div>
-                    <div class="collapse" id="service-aadhaar">
-                        <div class="service-card-body">
-                            Detailed guide on how to apply for an Aadhaar card, update details, required documents, and links to the official UIDAI portal. Step-by-step instructions will be provided here.
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="service-list">
-                <div class="service-item">
-                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-aadhaar">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/320px-Aadhaar_Logo.svg.png" alt="Aadhaar Logo" class="service-logo">
-                        <span class="service-name">Aadhaar Card</span>
-                        <p class="service-intro">The 12-digit unique ID for Indian residents, proof of identity and address.</p>
-                        <i class="bi bi-chevron-down service-toggle-icon"></i>
-                    </div>
-                    <div class="collapse" id="service-aadhaar">
-                        <div class="service-card-body">
-                            Detailed guide on how to apply for an Aadhaar card, update details, required documents, and links to the official UIDAI portal. Step-by-step instructions will be provided here.
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="service-list">
-                <div class="service-item">
-                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-aadhaar">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/320px-Aadhaar_Logo.svg.png" alt="Aadhaar Logo" class="service-logo">
-                        <span class="service-name">Aadhaar Card</span>
-                        <p class="service-intro">The 12-digit unique ID for Indian residents, proof of identity and address.</p>
-                        <i class="bi bi-chevron-down service-toggle-icon"></i>
-                    </div>
-                    <div class="collapse" id="service-aadhaar">
-                        <div class="service-card-body">
-                            Detailed guide on how to apply for an Aadhaar card, update details, required documents, and links to the official UIDAI portal. Step-by-step instructions will be provided here.
-                        </div>
-                    </div>
-                </div>
                 </div>
 
-            <footer id="main-footer">
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-aadhaar">
+                        <a href="https://uidai.gov.in/" target="_blank" class="service-brand js-stop-propagation">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/320px-Aadhaar_Logo.svg.png" alt="Aadhaar Logo" class="service-logo">
+                            <span class="service-name">Aadhaar Card</span>
+                        </a>
+                        <p class="service-intro">The 12-digit unique ID for Indian residents.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://uidai.gov.in/" target="_blank" class="service-link-arrow js-stop-propagation"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="collapse" id="service-aadhaar" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">Detailed guide on how to apply for an Aadhaar card, update details, required documents, and links to the official UIDAI portal will be provided here.</div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                     <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-pan">
+                        <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" class="service-brand js-stop-propagation"><span class="service-name">PAN Card</span></a>
+                        <p class="service-intro">A 10-character alphanumeric identifier for taxpayers.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" class="service-link-arrow js-stop-propagation"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="collapse" id="service-pan" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">Detailed guide on how to apply for a PAN card, check status, and link with Aadhaar will be provided here.</div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-passport">
+                        <a href="https://www.passportindia.gov.in/" target="_blank" class="service-brand js-stop-propagation"><span class="service-name">Passport</span></a>
+                        <p class="service-intro">The official document for international travel.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.passportindia.gov.in/" target="_blank" class="service-link-arrow js-stop-propagation"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="collapse" id="service-passport" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">Step-by-step instructions for applying for a new passport, renewal process, and scheduling appointments will be provided here.</div>
+                    </div>
+                </div>
+
+                
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-dl">
+                        <a href="#" target="_blank" class="service-brand js-stop-propagation"><span class="service-name">Driving License</span></a>
+                        <p class="service-intro">Official authorization to operate a motor vehicle.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="#" target="_blank" class="service-link-arrow js-stop-propagation"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="collapse" id="service-dl" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">Guide for learner's license, permanent license, and renewal procedures across different states will be provided here.</div>
+                    </div>
+                </div>
+
+            </div> <footer id="main-footer">
                 <div class="container">
                     <p>Copyright &copy; 2025 Do it YourSelf. All Rights Reserved.</p>
                     <p><strong>Disclaimer:</strong> This site provides guidance and links. Please verify information with official sources.</p>

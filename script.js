@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function(){
     const heroH1 = document.querySelector('#hero h1');
     const heroSection = document.getElementById('hero');
 

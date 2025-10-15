@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Do It Yourself</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --light-bg: #E4EAEA;
+            --dark-bg: #24464C;
+            --text-light: #f8f9fa;
+            --text-dark: #212529;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top, #24464C, #1a3236, black);
+            color: var(--text-light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- Navbar --- */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--text-light) !important;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.8) !important;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #fff !important;
+        }
+        
+        /* --- Main Content --- */
+        .main-content {
+            flex: 1;
+        }
+
+        .about-section {
+            padding: 80px 0;
+        }
+
+        .about-section h1 {
+            font-weight: 700;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        
+        .about-section .lead {
+            font-size: 1.25rem;
+            color: rgba(228, 234, 234, 0.8); /* Lighter text on dark bg */
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+        }
+
+        .content-card {
+            background-color: rgba(36, 70, 76, 0.4); /* Semi-transparent dark card */
+            border: 1px solid rgba(228, 234, 234, 0.2);
+            border-radius: 1rem;
+            padding: 2.5rem;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            margin-bottom: 2rem;
+        }
+        
+        .content-card h2 {
+            font-weight: 600;
+            color: #E4EAEA;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--light-bg);
+            padding-left: 1rem;
+        }
+
+        .content-card p, .content-card li {
+            color: rgba(228, 234, 234, 0.9);
+            line-height: 1.8;
+        }
+
+        .content-card ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .content-card ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+
+        .content-card ul li::before {
+            content: "\f26a"; /* Bootstrap icon check2-circle */
+            font-family: "Bootstrap-icons";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            color: var(--light-bg);
+            font-weight: bold;
+        }
+
+        .team-name {
+            font-weight: 700;
+            color: #fff;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #000;
+            color: rgba(255, 255, 255, 0.6);
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+        
+        footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Do It YourSelf</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Explore
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Identity</a></li>
+                          <li><a class="dropdown-item" href="#">Finance</a></li>
+                          <li><a class="dropdown-item" href="#">Education</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Terms & Disclaimer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="about-section">
+            <div class="container text-center">
+                <h1>Simplifying Complexity</h1>
+                <p class="lead">
+                    Our mission is to untangle the complex processes of everyday tasks. From essential government documents to financial services and lifestyle platforms, we provide clear, step-by-step guidance, all in one place.
+                </p>
+                <div class="row">
+                    <div class="col-lg-7 text-start">
+                        <div class="content-card h-100">
+                           <h2>Our Vision</h2>
+                           <p>
+                            In a world saturated with information, finding a clear path to get things done can be overwhelming. We envisioned a single, unified platform where any user can find reliable, easy-to-understand guides for essential services. No more navigating confusing websites or searching for scattered information. "Do It YourSelf" is your centralized hub for simplified action.
+                           </p>
+                           <p>
+                            We believe that access to clear information is a fundamental need. Our goal is to empower you to handle tasks independently and with confidence.
+                           </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-start">
+                         <div class="content-card h-100">
+                            <h2>The Team</h2>
+                            <p>
+                                We are <span class="team-name">"Team Trifecta"</span>, a group of passionate individuals dedicated to making information accessible. Our diverse skills in research, design, and technology come together to build this user-centric platform.
+                            </p>
+                            <h2>Core Features</h2>
+                            <ul>
+                                <li><strong>Unified Guides:</strong> Step-by-step instructions for a wide range of services.</li>
+                                <li><strong>Curated Links:</strong> Direct access to official portals and resources.</li>
+                                <li><strong>Concise Information:</strong> Key details presented in a clean, toggle-based format.</li>
+                                <li><strong>No Login Required:</strong> Instant, open access for everyone.</li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Do It YourSelf. All Rights Reserved.</p>
+            <p><strong>Disclaimer:</strong> This site provides guidance and links. Please verify information with official sources.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

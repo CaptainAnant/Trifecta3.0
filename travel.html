@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel - Do it YourSelf</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="subpage.css">
+</head>
+
+<body>
+
+    <header id="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand" href="index.html">Do it YourSelf</a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">DashBoard</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Explore</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="identityDoc.html"><i class="bi bi-person-vcard-fill"></i>
+                                    Identity Documents</a></li>
+                            <li><a class="dropdown-item" href="finance.html"><i class="bi bi-bank"></i> Finance &
+                                    Banking</a></li>
+                            <li><a class="dropdown-item" href="utilities.html"><i class="bi bi-lightbulb-fill"></i>
+                                    Utilities</a>
+                            </li>
+                            <li><a class="dropdown-item" href="education.html"><i class="bi bi-mortarboard-fill"></i>
+                                    Education</a>
+                            </li>
+                            <li><a class="dropdown-item" href="ai_tools.html"><i class="bi bi-robot"></i> AI Tools &
+                                    Platforms</a>
+                            </li>
+                            <li><a class="dropdown-item" href="productivity.html"><i class="bi bi-tools"></i>
+                                    Productivity &
+                                    Creativity</a></li>
+                            <li><a class="dropdown-item" href="ecomm&fashion.html"><i class="bi bi-bag-heart-fill"></i>
+                                    E-Commerce &
+                                    Fashion</a></li>
+                            <li><a class="dropdown-item" href="quickeservice&travel.html"><i
+                                        class="bi bi-rocket-takeoff-fill"></i> Quick
+                                    Services</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-airplane-engines-fill"></i> Travel</a>
+                            </li>
+                            <li><a class="dropdown-item" href="food.html"><i class="bi bi-cup-hot-fill"></i> Food &
+                                    Beverages</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Terms & Disclaimer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="subpage-container">
+        <aside class="sidebar">
+            <nav>
+                <ul class="sidebar-nav">
+                    <li class="nav-item"><a href="identityDoc.html" class="nav-link active"><i
+                                class="bi bi-person-vcard-fill"></i><span>Identity Documents</span></a></li>
+                    <li class="nav-item"><a href="finance.html" class="nav-link"><i class="bi bi-bank"></i><span>Finance
+                                &
+                                Banking</span></a></li>
+                    <li class="nav-item"><a href="utilities.html" class="nav-link"><i
+                                class="bi bi-lightbulb-fill"></i><span>Utilities</span></a></li>
+                    <li class="nav-item"><a href="education.html" class="nav-link"><i
+                                class="bi bi-mortarboard-fill"></i><span>Education</span></a></li>
+                    <li class="nav-item"><a href="ai_tools.html" class="nav-link"><i class="bi bi-robot"></i><span>AI
+                                Tools &
+                                Platforms</span></a></li>
+                    <li class="nav-item"><a href="productivity.html" class="nav-link"><i
+                                class="bi bi-tools"></i><span>Productivity &
+                                Creativity</span></a></li>
+                    <li class="nav-item"><a href="ecomm&fashion.html" class="nav-link"><i
+                                class="bi bi-bag-heart-fill"></i><span>E-Commerce & Fashion</span></a></li>
+                    <li class="nav-item"><a href="quickeservice&travel.html" class="nav-link"><i
+                                class="bi bi-rocket-takeoff-fill"></i><span>Quick Services</span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i
+                                class="bi bi-airplane-engines-fill"></i><span>Travel</span></a></li>
+                    <li class="nav-item"><a href="food.html" class="nav-link"><i
+                                class="bi bi-cup-hot-fill"></i><span>Food &
+                                Beverages</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1 class="page-title">Travel</h1>
+
+            <div class="accordion" id="servicesAccordion">
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-ola">
+                        <a href="https://www.olacabs.com/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ola_Cabs_logo.svg/440px-Ola_Cabs_logo.svg.png"
+                                alt="Ola Cabs Logo" class="service-logo">
+                            <span class="service-name">Ola</span>
+                        </a>
+                        <p class="service-intro">India's leading ride-hailing platform for booking cabs, autos, and
+                            more.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.olacabs.com/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-ola" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What is Ola?</h6>
+                            <p>Ola is an Indian multinational ride-sharing company, offering a wide range of app-based
+                                transportation options. It's one of the most popular choices for convenient and
+                                on-demand travel within cities and for outstation trips across India.</p>
+
+                            <h6>Vehicle Options</h6>
+                            <p>
+                                <strong>For City Rides:</strong> Auto, Bike, Micro (compact hatchbacks), Mini (sedans),
+                                and Prime SUV (SUVs).<br>
+                                <strong>For Flexible Trips:</strong> Ola Rentals allows you to book a cab on an hourly
+                                basis.<br>
+                                <strong>For Travel:</strong> Outstation cabs for one-way or round trips between cities.
+                            </p>
+
+                            <h6>How Pricing Works</h6>
+                            <p>
+                                <strong>Dynamic Fare:</strong> The cost is based on distance, travel time, and demand
+                                (surge pricing during peak hours). An estimated fare is always shown in the app before
+                                you confirm your booking.<br>
+                                <strong>Payment Methods:</strong> You can pay via cash, Ola Money wallet, UPI, and
+                                debit/credit cards.
+                            </p>
+
+                            <h6>Key Features & Availability</h6>
+                            <p>
+                                <strong>Safety:</strong> Includes an in-app emergency button, ride tracking, and sharing
+                                trip details with contacts.<br>
+                                <strong>Cities:</strong> Operates in over 200 cities across India, including all major
+                                metropolitan areas like Bengaluru, Mumbai, Delhi NCR, and Chennai.<br>
+                                <strong>New User Offers:</strong> First-time users often receive discount coupons for
+                                their initial rides. Check the 'Offers' section in the app for the latest promotions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-uber">
+                        <a href="https://www.uber.com/in/en/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Uber_logo_2018.svg/512px-Uber_logo_2018.svg.png"
+                                alt="Uber Logo" class="service-logo">
+                            <span class="service-name">Uber</span>
+                        </a>
+                        <p class="service-intro">On-demand service for booking rides, from bikes to cars, plus package
+                            delivery.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.uber.com/in/en/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-uber" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What is Uber?</h6>
+                            <p>Uber is a ride-sharing app that connects riders with nearby drivers. It allows users to
+                                book a wide range of vehicles for transportation on-demand through their smartphone,
+                                offering a convenient alternative to traditional taxis.</p>
+
+                            <h6>Services Offered in India</h6>
+                            <p>
+                                <strong>Economy Rides:</strong> Uber Go (compact sedans), Uber Auto, Uber Moto (bike
+                                taxis).<br>
+                                <strong>Comfort Rides:</strong> Premier (premium sedans with top drivers), UberXL (SUVs
+                                for up to 6 people).<br>
+                                <strong>Specialty Services:</strong> Rentals (book a car by the hour), Intercity
+                                (outstation trips), Connect (send and receive packages).<br>
+                                <strong>Commute:</strong> Uber Shuttle (bus service for office commutes in select
+                                cities).
+                            </p>
+
+                            <h6>Key Features</h6>
+                            <p>
+                                <strong>Upfront Pricing:</strong> See the estimated fare before you confirm your
+                                ride.<br>
+                                <strong>Live Tracking:</strong> Track your driver's location in real-time on the
+                                map.<br>
+                                <strong>Safety Toolkit:</strong> In-app features like an emergency button, PIN
+                                verification, and the ability to share trip status with contacts.<br>
+                                <strong>Multiple Payment Options:</strong> Pay with Cash, UPI, Debit/Credit Cards, or
+                                integrated wallets.
+                            </p>
+
+                            <h6>Pricing & Availability</h6>
+                            <p>
+                                <strong>Pricing Model:</strong> Fares are calculated based on distance, time, and
+                                real-time demand (surge pricing during peak hours).<br>
+                                <strong>Availability:</strong> Operates in over 125 cities across India, including all
+                                major metropolitan areas.<br>
+                                <strong>Subscription (Uber One):</strong> A membership program offering benefits like ₹0
+                                delivery fee on Uber Eats, up to 10% off on eligible trips, and access to top-rated
+                                drivers.
+                            </p>
+
+                            <h6>Who is it for?</h6>
+                            <p>Ideal for daily commuters, airport travelers, people needing to run errands, and anyone
+                                seeking a quick and convenient transportation or package delivery solution without
+                                owning a vehicle.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-rapido">
+                        <a href="https://www.rapido.bike/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Rapido-logo.png"
+                                alt="Rapido Logo" class="service-logo">
+                            <span class="service-name">Rapido</span>
+                        </a>
+                        <p class="service-intro">India's leading bike taxi platform, offering quick rides, auto, and cab
+                            services.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.rapido.bike/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-rapido" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What is Rapido?</h6>
+                            <p>Rapido is an Indian ride-hailing service focused on providing fast and affordable
+                                last-mile connectivity. Initially known for its pioneering bike taxi service, it has
+                                expanded to include auto-rickshaws and cabs, catering to a wide range of commuter needs.
+                            </p>
+
+                            <h6>Services Offered</h6>
+                            <p>
+                                <strong>Bike Taxi:</strong> The flagship service for a single passenger, ideal for
+                                quickly navigating through city traffic.<br>
+                                <strong>Auto:</strong> On-demand booking for auto-rickshaws with transparent
+                                pricing.<br>
+                                <strong>Cabs:</strong> A more recent addition, offering private car rides, competing
+                                with other major aggregators.<br>
+                                <strong>Rapido Local:</strong> An intra-city delivery service for sending food,
+                                documents, and other small packages.
+                            </p>
+
+                            <h6>Pricing & Subscriptions</h6>
+                            <p>
+                                <strong>Pay-Per-Ride:</strong> Fares are calculated based on a base price, distance
+                                traveled, and dynamic demand (surge pricing).<br>
+                                <strong>Rapido Power Pass:</strong> A subscription model for frequent users. By
+                                purchasing a pass, users get significant discounts or fixed fares on a specified number
+                                of rides, leading to overall savings. Pass prices and benefits vary by city.
+                            </p>
+
+                            <h6>Key Features & Safety</h6>
+                            <p>
+                                <strong>Availability:</strong> Operates in over 100 cities across India, including
+                                Bengaluru, Mumbai, Delhi, Hyderabad, and Chennai.<br>
+                                <strong>Safety:</strong> Features include live ride tracking, mandatory helmets for bike
+                                riders and pillions, number masking, and an in-app SOS button for emergencies.<br>
+                                <strong>Convenience:</strong> Quick booking, multiple payment options, and door-to-door
+                                service.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-nammayatri">
+                        <a href="https://www.nammayatri.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Namma_Yatri_Logo.svg"
+                                alt="Namma Yatri Logo" class="service-logo">
+                            <span class="service-name">Namma Yatri</span>
+                        </a>
+                        <p class="service-intro">A zero-commission ride-hailing app connecting you directly with auto
+                            and cab drivers.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.nammayatri.in/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-nammayatri" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What is Namma Yatri?</h6>
+                            <p>Namma Yatri is a community-driven, ride-hailing application built on an open network
+                                (ONDC). It started in Bengaluru and is designed to offer a fairer service by connecting
+                                customers directly with auto-rickshaw and cab drivers, eliminating middlemen
+                                commissions.</p>
+
+                            <h6>Core Features</h6>
+                            <p>
+                                <strong>Zero Commission:</strong> Drivers receive 100% of the fare. The app does not
+                                charge any commission, leading to better earnings for drivers.<br>
+                                <strong>Direct Payment:</strong> You pay the fare directly to the driver via UPI or cash
+                                at the end of the trip.<br>
+                                <strong>Transparent Fares:</strong> The fare is based on government-approved rates, with
+                                no hidden charges or random surge pricing.<br>
+                                <strong>Open Network:</strong> Built on the Open Network for Digital Commerce (ONDC),
+                                promoting an open and decentralized digital economy.
+                            </p>
+
+                            <h6>How Pricing Works</h6>
+                            <p>The app shows you the estimated fare based on the official meter charges for your city.
+                                Since there's no commission, the fare is often more affordable compared to aggregator
+                                platforms. The full amount you pay goes directly into the driver's account.</p>
+
+                            <h6>Who is it for?</h6>
+                            <p>Ideal for daily commuters and travelers in supported cities looking for a more
+                                transparent, ethical, and often cost-effective way to hire auto-rickshaws and cabs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-indigo">
+                        <a href="https://www.goindigo.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/IndiGo_logo.svg/500px-IndiGo_logo.svg.png"
+                                alt="IndiGo Airlines Logo" class="service-logo">
+                            <span class="service-name">IndiGo Airlines</span>
+                        </a>
+                        <p class="service-intro">India's largest low-cost carrier, offering domestic and international
+                            flight tickets.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.goindigo.in/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-indigo" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>About IndiGo</h6>
+                            <p>IndiGo is a low-cost airline headquartered in Gurugram, India. Known for its punctuality,
+                                extensive flight network, and affordable pricing model, it's the largest airline in
+                                India by fleet size and passengers carried, connecting to over 80 domestic and 30
+                                international destinations.</p>
+
+                            <h6>Booking & Fare Structure</h6>
+                            <p>
+                                <strong>Dynamic Pricing:</strong> Fares are not fixed. They vary based on demand,
+                                booking date, and travel date. Booking well in advance is usually cheapest.<br>
+                                <strong>Fare Types:</strong> Choose between 'Saver' (lowest base fare, pay for all
+                                add-ons) and 'Flexi Plus' (includes a free seat, lower cancellation fees, and a
+                                snack).<br>
+                                <strong>Sales & Offers:</strong> IndiGo frequently runs seasonal and promotional sales
+                                offering discounted tickets. Check their website or app for ongoing offers.
+                            </p>
+
+                            <h6>Key Services & Add-ons</h6>
+                            <p>
+                                As a low-cost airline, the base ticket includes only your seat and cabin baggage. All
+                                other services are paid add-ons:<br>
+                                <strong>Seat Selection:</strong> Choose your preferred seat (window, aisle, extra
+                                legroom) for a fee.<br>
+                                <strong>6E Tiffin:</strong> Pre-book your meals and snacks online, which is cheaper than
+                                buying on board.<br>
+                                <strong>Fast Forward:</strong> Get priority check-in and have your baggage arrive first
+                                on the belt.<br>
+                                <strong>Web Check-in:</strong> It is mandatory to web check-in for free up to 1 hour
+                                before your flight to get your boarding pass. Airport check-in may be chargeable.
+                            </p>
+
+                            <h6>Who Flies IndiGo?</h6>
+                            <p>Ideal for budget-conscious travelers, including students, families, and business
+                                professionals, who want an affordable, no-frills, and reliable way to travel across
+                                India and to nearby international locations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-mmt">
+                        <a href="https://www.makemytrip.com/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/MakeMyTrip_Logo.svg/512px-MakeMyTrip_Logo.svg.png"
+                                alt="MakeMyTrip Logo" class="service-logo">
+                            <span class="service-name">MakeMyTrip</span>
+                        </a>
+                        <p class="service-intro">A leading online platform for all travel booking needs, from flights
+                            and hotels to holiday packages.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.makemytrip.com/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-mmt" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What is MakeMyTrip?</h6>
+                            <p>MakeMyTrip is one of India's pioneering online travel agencies (OTAs). It provides a
+                                comprehensive portal for users to research, plan, and book a wide range of travel
+                                services for both domestic and international destinations.</p>
+
+                            <h6>Services Offered</h6>
+                            <p>
+                                <strong>Flights:</strong> Book one-way, round-trip, and multi-city flights across all
+                                major airlines.<br>
+                                <strong>Hotels:</strong> A vast inventory of hotels, homestays, villas, and apartments
+                                for every budget.<br>
+                                <strong>Holidays:</strong> Curated and customizable holiday packages for destinations in
+                                India and abroad.<br>
+                                <strong>Ground Transport:</strong> Book train tickets, inter-city buses, and outstation
+                                or airport cabs.<br>
+                                <strong>Other Services:</strong> Includes travel insurance, visa application assistance,
+                                and gift cards.
+                            </p>
+
+                            <h6>Key Features & Benefits</h6>
+                            <p>
+                                <strong>Exclusive Deals:</strong> Frequent promotional deals, festive sales, and
+                                exclusive discounts with partner banks.<br>
+                                <strong>MMT Black:</strong> An invite-only loyalty program offering exclusive perks like
+                                free flight/hotel cancellations, complimentary meals, and seat selection.<br>
+                                <strong>Flexible Payments:</strong> Offers "Book Now, Pay Later" options and easy EMI
+                                schemes for convenient booking.<br>
+                                <strong>User-Friendly Interface:</strong> An intuitive website and mobile app for
+                                seamless booking and trip management.
+                            </p>
+
+                            <h6>Who is it for?</h6>
+                            <p>Ideal for all types of travelers—solo, family, or business—who seek a reliable one-stop
+                                platform to manage their travel bookings with access to competitive pricing and a wide
+                                range of options.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-irctc">
+                        <a href="https://www.irctc.co.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/13/IRCTC_logo.svg/240px-IRCTC_logo.svg.png"
+                                alt="IRCTC Logo" class="service-logo">
+                            <span class="service-name">IRCTC</span>
+                        </a>
+                        <p class="service-intro">The official online ticketing, catering, and tourism portal for Indian
+                            Railways.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.irctc.co.in/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-irctc" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What is IRCTC?</h6>
+                            <p>The Indian Railway Catering and Tourism Corporation (IRCTC) is a subsidiary of Indian
+                                Railways that handles online ticketing, catering, and tourism operations. It's the
+                                primary platform for booking train tickets across India.</p>
+
+                            <h6>Core Services</h6>
+                            <p>
+                                <strong>Train Ticketing:</strong> Book General, Sleeper, and AC class tickets for any
+                                route.<br>
+                                <strong>Tourism:</strong> Offers a wide range of affordable domestic and international
+                                tour packages.<br>
+                                <strong>Other Bookings:</strong> You can also book flights, buses, and hotels through
+                                the platform.<br>
+                                <strong>E-Catering:</strong> Order food from partner restaurants to be delivered to your
+                                seat at designated stations.
+                            </p>
+
+                            <h6>Tatkal Booking: Key Rules & Tips</h6>
+                            <p>
+                                <strong>Booking Window:</strong> Tatkal booking opens at <strong>10:00 AM</strong> for
+                                AC classes and <strong>11:00 AM</strong> for non-AC classes, one day before the train's
+                                departure from its origin station.<br>
+                                <strong>15-Minute Advantage for Users:</strong> To give individual users a fair chance,
+                                authorized ticket agents are <strong>barred from booking Tatkal tickets for the first 15
+                                    minutes</strong> after the window opens (10:00-10:15 AM for AC, 11:00-11:15 AM for
+                                non-AC).<br>
+                                <strong>Booking Limits:</strong> A maximum of 4 passengers can be booked on a single
+                                Tatkal ticket.<br>
+                                <strong>No Refunds:</strong> Confirmed Tatkal tickets are <strong>not eligible for a
+                                    refund</strong> upon cancellation.<br>
+                                <strong>Pro Tip:</strong> Use the "Master List" feature in your IRCTC profile to save
+                                passenger details in advance. This allows you to auto-fill the information and book much
+                                faster.
+                            </p>
+
+                            <h6>Who is it for?</h6>
+                            <p>Essential for anyone planning to travel by train in India, providing a single point of
+                                access for ticketing and other travel-related services.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-agoda">
+                        <a href="https://www.agoda.com/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Agoda_logo_2023.svg/512px-Agoda_logo_2023.svg.png"
+                                alt="Agoda Logo" class="service-logo">
+                            <span class="service-name">Agoda</span>
+                        </a>
+                        <p class="service-intro">An online travel platform for booking hotels, vacation homes, flights,
+                            and more worldwide.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.agoda.com/" target="_blank" class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-agoda" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What is Agoda?</h6>
+                            <p>Agoda is a global online travel agency (OTA) that provides a booking platform for a wide
+                                range of accommodations, including hotels, resorts, vacation rentals, and private homes.
+                                It also offers services for booking flights and airport transfers, with a strong
+                                presence in the Asian market.</p>
+
+                            <h6>Key Features</h6>
+                            <p>
+                                <strong>Vast Selection:</strong> Access to over 2 million properties across the globe,
+                                from budget hostels to luxury hotels.<br>
+                                <strong>Agoda VIP Program:</strong> A loyalty program that unlocks exclusive discounts
+                                and perks based on your booking history.<br>
+                                <strong>PointsMAX:</strong> Earn points for your favorite third-party loyalty programs
+                                (like airline miles) when you book hotels.<br>
+                                <strong>Flexible Options:</strong> Many properties offer "Book Now, Pay Later" and free
+                                cancellation policies.
+                            </p>
+
+                            <h6>Deals & Savings</h6>
+                            <p>
+                                <strong>Insider Deals:</strong> Special discounted rates available only to users who are
+                                logged into their Agoda account.<br>
+                                <strong>AgodaCash:</strong> A cashback reward system where you earn credits from
+                                bookings that can be used to pay for future stays.<br>
+                                <strong>Daily Deals & Coupons:</strong> Regularly updated promotions and coupon codes
+                                offer additional savings on specific destinations or properties.
+                            </p>
+
+                            <h6>Who is it for?</h6>
+                            <p>Ideal for all types of travelers, from budget-conscious backpackers to families and
+                                business professionals, looking for competitive pricing and a wide variety of
+                                accommodation options, especially when traveling in Asia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-redbus">
+                        <a href="https://www.redbus.in/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Redbus_logo.svg/512px-Redbus_logo.svg.png"
+                                alt="RedBus Logo" class="service-logo">
+                            <span class="service-name">RedBus</span>
+                        </a>
+                        <p class="service-intro">India's largest online platform for booking bus, train tickets, and
+                            charter services.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.redbus.in/" target="_blank" class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-redbus" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What is RedBus?</h6>
+                            <p>RedBus is India's go-to online ticketing platform, enabling travelers to search, compare,
+                                and book bus tickets from thousands of operators across the country. It has expanded its
+                                services to include train ticket booking and vehicle rentals.</p>
+
+                            <h6>Key Services & Features</h6>
+                            <p>
+                                <strong>Bus Tickets:</strong> Choose from various bus types like Sleeper, Seater, AC,
+                                Non-AC, and Volvo from over 3,500 bus operators.<br>
+                                <strong>redRail:</strong> Book train tickets conveniently as an authorized IRCTC partner
+                                agent.<br>
+                                <strong>rYde:</strong> Book cabs, tempo travellers, and mini-buses for outstation trips
+                                and airport transfers.<br>
+                                <strong>Bus Hire:</strong> Rent an entire bus for group travel, pilgrimages, or
+                                corporate events.<br>
+                                <strong>Live Tracking:</strong> Track the real-time location of your bus for most major
+                                routes.
+                            </p>
+
+                            <h6>Offers & Booking Tips</h6>
+                            <p>
+                                <strong>New User Offers:</strong> Look for promo codes that provide a discount or
+                                cashback on your first booking.<br>
+                                <strong>Wallet & Card Discounts:</strong> Frequent offers are available for payments
+                                made via specific wallets (like Amazon Pay, Paytm) or credit/debit cards.<br>
+                                <strong>Festive Deals:</strong> Special discounts are often rolled out during holidays
+                                and festival seasons. Always check the 'Offers' section before booking.
+                            </p>
+
+                            <h6>Who is it for?</h6>
+                            <p>Ideal for students, daily commuters, families, and tourists looking for a reliable and
+                                convenient way to book inter-city ground transport. It simplifies travel planning by
+                                bringing numerous options onto a single platform with user reviews and ratings.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-bookmyshow">
+                        <a href="https://in.bookmyshow.com/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/BookMyShow_logo.svg/440px-BookMyShow_logo.svg.png"
+                                alt="BookMyShow Logo" class="service-logo">
+                            <span class="service-name">BookMyShow</span>
+                        </a>
+                        <p class="service-intro">India's leading platform for booking tickets for movies, events,
+                            concerts, and plays.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://in.bookmyshow.com/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-bookmyshow" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What is BookMyShow?</h6>
+                            <p>BookMyShow is India's largest online entertainment ticketing platform. It allows users to
+                                discover, book, and get tickets for movies, live events, concerts, sports, plays, and
+                                other entertainment activities happening in their city.</p>
+
+                            <h6>Key Services Offered</h6>
+                            <p>
+                                <strong>Movie Tickets:</strong> Browse showtimes, choose seats, and book tickets for all
+                                major cinemas like PVR, INOX, and Cinepolis.<br>
+                                <strong>Live Events:</strong> Book tickets for a wide range of events, including
+                                concerts, stand-up comedy shows, music festivals, and sports tournaments.<br>
+                                <strong>BookMyShow Stream:</strong> A pay-per-view streaming service to rent or buy
+                                movies and exclusive shows online.<br>
+                                <strong>Food & Beverages:</strong> Pre-book your snacks and combos along with your movie
+                                tickets to avoid queues.
+                            </p>
+
+                            <h6>Offers & Subscription Plans</h6>
+                            <p>
+                                <strong>Bank & Wallet Offers:</strong> The platform is known for its numerous discounts,
+                                especially 'Buy 1 Get 1 Free' offers on select credit/debit cards from banks like ICICI,
+                                Axis, HDFC, and more. Cashback offers with wallets like Paytm are also common.<br>
+                                <strong>BookMyShow Pass:</strong> This is a paid subscription (availability varies) that
+                                offers significant discounts on tickets for a fixed period. For example, pay a fee like
+                                ₹299 for 3 months to get a set discount on your next few bookings.<br>
+                                <strong>Superstar Program:</strong> A free, tier-based loyalty program that rewards
+                                frequent users with personalized offers and benefits based on their spending.
+                            </p>
+
+                            <h6>Who is it for?</h6>
+                            <p>An essential app for anyone interested in movies, live entertainment, or looking for
+                                weekend activities. It's the go-to platform for booking entertainment tickets in most
+                                Indian cities and towns.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-goibibo">
+                        <a href="https://www.goibibo.com/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Goibibo_logo.svg/320px-Goibibo_logo.svg.png"
+                                alt="Goibibo Logo" class="service-logo">
+                            <span class="service-name">Goibibo</span>
+                        </a>
+                        <p class="service-intro">A leading online travel platform in India for booking flights, hotels,
+                            buses, and more.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.goibibo.com/" target="_blank"
+                            class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-goibibo" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What is Goibibo?</h6>
+                            <p>Goibibo is one of India's top online travel aggregators (OTA), providing a one-stop
+                                platform for a wide range of travel booking needs. It is part of the MakeMyTrip Limited
+                                group of companies.</p>
+
+                            <h6>Services Offered</h6>
+                            <p>
+                                <strong>Flights:</strong> Book domestic and international air tickets with features like
+                                price lock.<br>
+                                <strong>Hotels:</strong> A vast network of hotels, including certified properties called
+                                'goStays' for a quality experience.<br>
+                                <strong>Trains:</strong> An authorized IRCTC partner for booking train tickets.<br>
+                                <strong>Buses:</strong> Book tickets for private and state-run bus services across
+                                India.<br>
+                                <strong>Cabs:</strong> Airport transfers and outstation cab booking services.
+                            </p>
+
+                            <h6>Features & Offers</h6>
+                            <p>
+                                <strong>goTribe Loyalty Program:</strong> A subscription program offering extra
+                                discounts and benefits. Users also earn 'Tribe Coins' on bookings that can be used for
+                                future discounts.<br>
+                                <strong>New User Offers:</strong> Frequently provides coupon codes (like 'WELCOME') for
+                                flat discounts on the first booking.<br>
+                                <strong>Student Fares:</strong> Special discounted fares are available for students on
+                                select domestic flights (valid student ID required during check-in).<br>
+                                <strong>Bank & Wallet Deals:</strong> Regular partnerships with major banks (HDFC,
+                                ICICI, etc.) and digital wallets for instant discounts.
+                            </p>
+
+                            <h6>Key Alternatives in India</h6>
+                            <p>MakeMyTrip, EaseMyTrip, Cleartrip, Ixigo, and Agoda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-card" data-bs-toggle="collapse" data-bs-target="#service-ixigo">
+                        <a href="https://www.ixigo.com/" target="_blank"
+                            class="service-brand js-stop-propagation redirect-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Ixigo_logo.svg/512px-Ixigo_logo.svg.png"
+                                alt="Ixigo Logo" class="service-logo">
+                            <span class="service-name">Ixigo</span>
+                        </a>
+                        <p class="service-intro">An AI-based travel platform for booking flights, trains, buses, and
+                            hotels in India.</p>
+                        <i class="bi bi-chevron-down service-toggle-icon"></i>
+                        <a href="https://www.ixigo.com/" target="_blank" class="service-link-arrow js-stop-propagation">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="service-ixigo" data-bs-parent="#servicesAccordion">
+                        <div class="service-card-body">
+                            <h6>What is Ixigo?</h6>
+                            <p>Ixigo is an Indian online travel aggregator that uses AI to help users organize, book,
+                                and track their trips. It provides a comprehensive platform to compare prices and book
+                                flights, confirm train tickets (as an authorized IRCTC partner), and find deals on buses
+                                and hotels.</p>
+
+                            <h6>Core Services</h6>
+                            <p>
+                                <strong>Flights:</strong> Compares flight fares across multiple airlines and travel
+                                websites to find the cheapest options. Includes features like fare alerts and a fare
+                                prediction calendar.<br>
+                                <strong>Trains:</strong> Offers seamless train booking, PNR status prediction with 95%
+                                accuracy, live train running status, and seat availability checks.<br>
+                                <strong>Buses:</strong> Search and book from over 3,000 private and state-run bus
+                                operators across India.<br>
+                                <strong>Hotels:</strong> Aggregates hotel listings and allows users to compare prices
+                                from various booking sites.
+                            </p>
+
+                            <h6>Key Features & Offers</h6>
+                            <p>
+                                <strong>ixigo Assured:</strong> A premium feature on select bookings that offers
+                                benefits like free cancellation and full, instant refunds for peace of mind.<br>
+                                <strong>ixigo money:</strong> A virtual currency wallet where users earn and redeem
+                                cashback on their bookings.<br>
+                                <strong>New User Offers:</strong> Frequently provides discount codes and special fares
+                                for first-time bookings on the app or website.<br>
+                                <strong>Delivery Time:</strong> Instant confirmation for all bookings is sent via email
+                                and SMS.
+                            </p>
+
+                            <h6>Who is it for?</h6>
+                            <p>Ideal for Indian travelers looking for a budget-friendly, all-in-one solution to plan and
+                                manage their travel. It is particularly popular among frequent train and domestic flight
+                                travelers for its robust tracking and booking features.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="main-footer">
+                <div class="container">
+                    <p>Copyright &copy; 2025 Do it YourSelf. All Rights Reserved.</p>
+                    <p><strong>Disclaimer:</strong> This site provides guidance and links. Please verify information
+                        with official sources.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="subpage.js"></script>
+</body>
+
+</html>

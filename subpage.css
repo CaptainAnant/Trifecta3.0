@@ -1,13 +1,13 @@
 /* --- Sub-page Layout Structure --- */
 body {
-    /* Allow scrolling */
-    overflow: visible;
+    /* Prevent the entire page from scrolling */
+    overflow: hidden;
 }
 
 .subpage-container {
     display: flex;
     /* Set the container height to fill the screen below the navbar */
-    min-height: 100vh;
+    height: 100vh;
     /* Add padding at the top to account for the fixed navbar's height */
     padding-top: 70px;
     /* Adjust this value to match your navbar's height */
@@ -79,7 +79,7 @@ body {
     flex-grow: 1;
     overflow-y: auto;
     /* This makes ONLY the main content scrollable */
-    min-height: calc(100vh - 200px);
+    height: 100vh;
     padding: 2.5rem;
     padding-top: 8rem;
     /* Padding to clear the fixed navbar */
@@ -239,22 +239,17 @@ body {
     color: var(--light-text);
 }
 
-/* Footer (placed outside main content, fixed at bottom) */
+/* Footer (placed inside main content) */
 #main-footer {
     background-color: var(--dark-text);
     color: rgba(228, 234, 234, 0.7);
     padding: 1.5rem 0;
     text-align: center;
     font-size: 0.9rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     /* Add space above the footer */
-    /* Position the footer at the bottom */
-    position: relative;
-    width: calc(100% - 280px);
-    margin-left: 280px;
-    z-index: 1000;
-    /* Straight edges as per user preference */
-    border-radius: 0;
-    margin-top: auto;
+    border-radius: 12px;
 }
 
 #main-footer p {
@@ -295,13 +290,11 @@ body {
 body {
     overflow-x: hidden;
     /* Allow vertical scroll, hide horizontal */
-    overflow-y: visible;
 }
 
 .subpage-container {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    height: 100%;
 }
 
 /* --- MOBILE FIRST STYLES (Default for screens < 992px) --- */
@@ -331,19 +324,8 @@ body {
     overflow-y: auto;
     padding: 2.5rem;
     padding-top: 5rem;
-    padding-bottom: 0;
     /* RESPONSIVE FIX: No left margin on mobile */
     margin-left: 0;
-    flex: 1;
-}
-
-#main-footer {
-    width: 100%;
-    margin-left: 0;
-    /* Straight edges as per user preference */
-    border-radius: 0;
-    position: relative;
-    margin-top: auto;
 }
 
 .sidebar-toggler {
@@ -362,17 +344,6 @@ body {
     .main-content {
         /* RESPONSIVE FIX: Add margin back for the visible sidebar */
         margin-left: 280px;
-        padding-bottom: 0;
-        flex: 1;
-    }
-
-    #main-footer {
-        width: calc(100% - 280px);
-        margin-left: 280px;
-        /* Straight edges as per user preference */
-        border-radius: 0;
-        position: relative;
-        margin-top: auto;
     }
 
     .sidebar-toggler {

@@ -216,10 +216,6 @@ main {
     padding: 2rem 0;
     text-align: center;
     font-size: 0.9rem;
-    /* Make sure footer stays at bottom */
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 #main-footer p {
@@ -367,8 +363,7 @@ body {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 3rem; /* Add space above the footer */
-    /* border-radius removed to create straight edges */
-    border-radius: 0;
+    border-radius: 12px;
 }
 
 #main-footer p {

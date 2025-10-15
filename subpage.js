@@ -30,19 +30,5 @@ document.addEventListener('DOMContentLoaded', () => {
         sidebarToggleBtn.addEventListener('click', toggleSidebar);
         overlay.addEventListener('click', toggleSidebar);
     }
-
-    // --- NEW ACTIVE STATE LOGIC FOR SIDEBAR ---
-    // Get current page filename
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    
-    // Remove active class from all sidebar links
-    const sidebarLinks = document.querySelectorAll('.sidebar-nav .nav-link');
-    sidebarLinks.forEach(link => {
-        link.classList.remove('active');
-        
-        // Add active class to the link that matches the current page
-        if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
-        }
-    });
 });
+

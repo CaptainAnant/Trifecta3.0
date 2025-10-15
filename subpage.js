@@ -31,3 +31,4 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.addEventListener('click', toggleSidebar);
     }
 });
+

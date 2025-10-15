@@ -12,6 +12,7 @@ body {
     color: var(--dark-text);
 }
 
+
 main {
     flex-grow: 1;
 }

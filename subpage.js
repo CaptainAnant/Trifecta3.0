@@ -30,5 +30,18 @@ document.addEventListener('DOMContentLoaded', () => {
         sidebarToggleBtn.addEventListener('click', toggleSidebar);
         overlay.addEventListener('click', toggleSidebar);
     }
+    
+    // --- FIX: Dynamically set active sidebar item based on current page ---
+    const currentPage = window.location.pathname.split('/').pop();
+    const sidebarLinks = document.querySelectorAll('.sidebar-nav .nav-link');
+    
+    sidebarLinks.forEach(link => {
+        // Remove active class from all links
+        link.classList.remove('active');
+        
+        // Add active class to the link that matches the current page
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+        }
+    });
 });
-

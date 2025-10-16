@@ -1,45 +1,44 @@
+/* Note: global variables, base typography and navbar/dropdown/footer live in style.css */
+
 /* --- Sub-page Layout Structure --- */
+/* Keep horizontal overflow hidden; allow vertical scrolling inside .main-content */
 body {
-    /* Prevent the entire page from scrolling */
-    overflow: hidden;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .subpage-container {
     display: flex;
-    /* Set the container height to fill the screen below the navbar */
-    height: 100vh;
-    /* Add padding at the top to account for the fixed navbar's height */
-    padding-top: 70px;
-    /* Adjust this value to match your navbar's height */
+    flex: 1 0 auto;
 }
 
-
-/* --- Fixed Sidebar Styling (Updated) --- */
+/* --- MOBILE-FIRST SIDEBAR (hidden by default, slides in) --- */
 .sidebar {
     width: 280px;
-    flex-shrink: 0;
-    height: calc(100vh - 70px);
-    /* Full height minus navbar height */
-    margin-top: 70px;
-    /* Push below navbar */
-    padding: 2rem 1rem;
-    overflow-y: auto;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1020;
-
-    /* Background changed to solid black */
+    height: 100vh;
+    z-index: 1032;
     background-color: var(--dark-text);
+    padding: 1rem;
+    padding-top: 1rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
 }
 
-/* --- Sidebar Link Styles (Updated for Visibility) --- */
+.sidebar.is-open {
+    transform: translateX(0);
+}
+
+/* Sidebar inner nav */
 .sidebar-nav {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 
 /* Default state for links (slightly dimmed) */
 .sidebar-nav .nav-link {
@@ -49,23 +48,18 @@ body {
     margin: 0.25rem 0;
     border-radius: 8px;
     color: rgba(255, 255, 255, 0.6);
-    /* Dimmed white for inactive links */
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover state for links */
 .sidebar-nav .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    /* Bright white on hover */
 }
 
-/* Active link style (bright and clearly visible) */
 .sidebar-nav .nav-link.active {
     background-color: rgba(255, 255, 255, 0.15);
     color: white;
-    /* Bright white for active link */
     font-weight: 600;
 }
 
@@ -74,28 +68,28 @@ body {
     font-size: 1.2rem;
 }
 
-/* --- Scrollable Main Content Styling (Updated) --- */
+/* --- Scrollable Main Content (only this scrolls) --- */
+/* Adjusted: use flex to fill space and be scrollable; removed fixed 100vh */
 .main-content {
-    flex-grow: 1;
+    width: 100%;
     overflow-y: auto;
-    /* This makes ONLY the main content scrollable */
-    height: 100vh;
     padding: 2.5rem;
-    padding-top: 8rem;
-    /* Padding to clear the fixed navbar */
-    margin-left: 280px;
-    /* Space for the fixed sidebar */
+    padding-top: 5rem; /* clear fixed navbar */
+    margin-left: 0; /* mobile default */
     background-color: var(--light-bg);
+    flex: 1 1 auto;
+    height: auto;
+    box-sizing: border-box;
 }
 
-
+/* Page title */
 .page-title {
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--dark-text);
 }
 
-/* Accordion/Service Card Styling */
+/* Accordion / Service Card styles */
 .service-item {
     margin-bottom: 1rem;
 }
@@ -112,7 +106,7 @@ body {
 }
 
 .service-card:hover {
-    transform: scale(1.015); /* Slight growth */
+    transform: scale(1.015);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
     border-color: #ccc;
 }
@@ -142,7 +136,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* Class added by JS to rotate the icon */
 .service-toggle-icon.rotated {
     transform: rotate(180deg);
 }
@@ -156,115 +149,31 @@ body {
     line-height: 1.8;
 }
 
-
-/* --- Basic Setup & Variables --- */
-:root {
-    --light-bg: #E4EAEA;
-    --dark-accent: #24464C;
-    --dark-text: #000000;
-    --light-text: #FFFFFF;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--light-bg);
-    color: var(--dark-text);
-}
-
-/* --- Reusable Components (Navbar & Footer) --- */
-
-/* Updated Navbar with Glass Effect */
-.navbar {
-    background-color: var(--dark-text);
-    /* Changed to complete black */
-    padding: 0.75rem 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1030;
-}
-
-.navbar-brand {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--light-text) !important;
-    transition: color 0.3s ease;
-    /* Added for hover effect */
-}
-
-/* Added logo hover effect */
-.navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8) !important;
-}
-
-.navbar .nav-link {
-    color: var(--light-bg) !important;
-    font-weight: 400;
-    margin: 0 0.5rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.navbar .nav-link:hover {
-    color: var(--light-text) !important;
-    transform: translateY(-2px);
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28228, 234, 234, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-/* Added Dropdown Menu Styles for Explore button */
-.dropdown-menu {
-    background-color: rgba(10, 10, 10, 0.6);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 0.75rem;
-    padding: 0.5rem;
-}
-
-.dropdown-item {
-    color: var(--light-bg);
-    display: flex;
-    align-items: center;
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.dropdown-item:hover,
-.dropdown-item:focus {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--light-text);
-}
-
-/* Footer (placed inside main content) */
+/* Ensure footer sits at the bottom for subpages */
 #main-footer {
-    background-color: var(--dark-text);
-    color: rgba(228, 234, 234, 0.7);
-    padding: 1.5rem 0;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    /* Add space above the footer */
-    /* border-radius: 12px; */
+    margin-top: auto;
 }
 
-#main-footer p {
-    margin: 0;
+/* Desktop layout: show sidebar and apply left margin to main content */
+@media (min-width: 992px) {
+    .sidebar {
+        transform: translateX(0);
+        transition: none;
+        height: calc(100vh - 70px); /* if navbar height is 70px */
+        top: 70px;
+        padding-top: 2rem;
+    }
+
+    .main-content {
+        margin-left: 280px;
+        padding-top: 8rem; /* clear fixed navbar */
+        /* keep desktop height behavior but ensure flex compatibility */
+        height: calc(100vh - 70px);
+        flex: 1 1 auto;
+    }
 }
 
-.redirect-link {
-    text-decoration: none;
-}
-
-
-
-
-/* --- Responsive Adjustments --- */
-/* RESPONSIVE FIX: Overlay for mobile sidebar */
+/* --- Overlay used to dim page when mobile sidebar is open --- */
 #sidebar-overlay {
     position: fixed;
     top: 0;
@@ -273,7 +182,6 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1031;
-    /* Above main content, below sidebar */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -284,89 +192,18 @@ body {
     visibility: visible;
 }
 
-
-
-/* --- Sub-page Layout Structure --- */
-body {
-    overflow-x: hidden;
-    /* Allow vertical scroll, hide horizontal */
+/* small utility */
+.redirect-link {
+    text-decoration: none;
 }
 
-.subpage-container {
-    display: flex;
-    height: 100%;
-}
-
-/* --- MOBILE FIRST STYLES (Default for screens < 992px) --- */
-.sidebar {
-    width: 280px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    z-index: 1032;
-    /* Highest z-index */
-    background-color: var(--dark-text);
-    padding: 1rem;
-    padding-top:1rem;
-    /* RESPONSIVE FIX: Hide sidebar off-screen by default */
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-}
-
-.sidebar.is-open {
-    /* RESPONSIVE FIX: Slide sidebar into view */
-    transform: translateX(0);
-}
-
-.main-content {
-    width: 100%;
-    overflow-y: auto;
-    padding: 2.5rem;
-    padding-top: 5rem;
-    /* RESPONSIVE FIX: No left margin on mobile */
-    margin-left: 0;
-}
-
-.sidebar-toggler {
-    display: block;
-    /* Show sidebar toggle on mobile */
-}
-
-/* --- DESKTOP STYLES (Applied for screens > 992px) --- */
-@media (min-width: 992px) {
-    .sidebar {
-        /* RESPONSIVE FIX: Make sidebar visible and static on desktop */
-        transform: translateX(0);
-        transition: none;
-    }
-
-    .main-content {
-        /* RESPONSIVE FIX: Add margin back for the visible sidebar */
-        margin-left: 280px;
-    }
-
-    .sidebar-toggler {
-        /* RESPONSIVE FIX: Hide the mobile-only button on desktop */
-        display: none;
-    }
-
-    #sidebar-overlay {
-        display: none;
-        /* No overlay needed on desktop */
-    }
-}
-
-/* ... other subpage styles like sidebar links and service cards ... */
-
-
+/* subtle arrow color */
 .service-link-arrow {
     color: var(--dark-text);
     margin-left: 1.65rem;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
-
 .service-link-arrow:hover {
     color: var(--dark-accent);
 }

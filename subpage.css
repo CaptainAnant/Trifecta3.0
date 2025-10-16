@@ -249,7 +249,7 @@ body {
     margin-top: 3rem;
     margin-bottom: 1rem;
     /* Add space above the footer */
-    border-radius: 12px;
+    /* border-radius: 12px; */
 }
 
 #main-footer p {

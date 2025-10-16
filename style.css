@@ -363,7 +363,7 @@ body {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 3rem; /* Add space above the footer */
-    border-radius: 12px;
+    /* border-radius: 12px; */
 }
 
 #main-footer p {
